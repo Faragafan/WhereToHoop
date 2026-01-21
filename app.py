@@ -50,6 +50,16 @@ def run_scraper_background():
 @app.route('/')
 def index():
     """Main dashboard page - loads instantly with cached data."""
+    # Auto-scrape on first visit if no data exists
+    if not DATA_FILE.exists():
+        print("🔄 No data found - triggering initial scrape...")
+        global scrape_in_progress
+        with scrape_lock:
+            if not scrape_in_progress:
+                scrape_in_progress = True
+                thread = threading.Thread(target=run_scraper_background, daemon=True)
+                thread.start()
+    
     return render_template('index.html')
 
 
