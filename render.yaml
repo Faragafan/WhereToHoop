@@ -8,4 +8,4 @@ services:
       - key: PYTHON_VERSION
         value: "3.11"
       - key: PLAYWRIGHT_BROWSERS_PATH
-        value: "/opt/render/project/src/.browsers"
+        value: "/opt/render/project/src/pw-browsers"
