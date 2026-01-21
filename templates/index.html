@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏀 Where to Hoop Bro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --available-high: #28a745;
+            --available-medium: #ffc107;
+            --available-low: #fd7e14;
+            --available-none: #dc3545;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.3) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        .card-header {
+            background: rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .current-time {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .current-time .date {
+            font-size: 0.4em;
+            opacity: 0.8;
+        }
+
+        .stats-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.2s;
+            height: 100%;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stats-number {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .stats-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .venue-list {
+            font-size: 0.85em;
+            margin-top: 10px;
+            text-align: left;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .venue-list-item {
+            padding: 5px 10px;
+            margin: 3px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .availability-badge {
+            display: inline-block;
+            padding: 0.3em 0.6em;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.85em;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .availability-high { background: var(--available-high); color: white; }
+        .availability-medium { background: var(--available-medium); color: #000; }
+        .availability-low { background: var(--available-low); color: white; }
+        .availability-none { background: var(--available-none); color: white; }
+
+        .date-selector {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+
+        .date-selector option {
+            background: #1a1a2e;
+        }
+
+        .filter-btn {
+            border-radius: 20px;
+            padding: 0.5em 1.2em;
+            margin: 0.2em;
+            transition: all 0.2s;
+        }
+
+        .filter-btn.active {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .venue-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .venue-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .venue-card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .venue-card-body {
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .time-slot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin: 5px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .time-slot:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .time-slot.current-slot {
+            border: 2px solid #667eea;
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        .time-slot-time {
+            font-weight: 500;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .refresh-btn {
+            transition: all 0.3s;
+        }
+
+        .refresh-btn:hover {
+            transform: rotate(180deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #28a745;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-dribbble"></i> Where to Hoop Bro
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <span class="last-updated" id="lastUpdated"></span>
+                <button class="btn btn-outline-light btn-sm refresh-btn" onclick="window.location.reload()">
+                    <i class="bi bi-arrow-clockwise"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Current Time Display -->
+        <div class="current-time">
+            <span class="live-indicator"></span>
+            <span id="currentTime">--:--:--</span>
+            <div class="date" id="currentDateDisplay">Loading...</div>
+        </div>
+
+        <!-- Real-time Stats Row -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="stats-card">
+                    <div class="stats-number text-success" id="statNowAvailable">-</div>
+                    <div class="stats-label">Venues Available Right Now</div>
+                    <div class="venue-list" id="venuesNowList"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="stats-card">
+                    <div class="stats-number text-info" id="statNext2Hours">-</div>
+                    <div class="stats-label">Venues Available in Next 2 Hours</div>
+                    <div class="venue-list" id="venuesNext2HoursList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date Selector and Filter -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="form-label text-white"><i class="bi bi-calendar3"></i> Select Date:</label>
+                        <select class="form-select date-selector" id="dateSelector" onchange="changeDate()">
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-white"><i class="bi bi-funnel"></i> Filter:</label>
+                        <div>
+                            <button class="btn btn-outline-light filter-btn active" data-filter="all" onclick="setFilter('all')">All Slots</button>
+                            <button class="btn btn-outline-success filter-btn" data-filter="available" onclick="setFilter('available')">Available Only</button>
+                            <button class="btn btn-outline-warning filter-btn" data-filter="good" onclick="setFilter('good')">≥3 Available</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend mb-4">
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--available-high);"></div>
+                <span>Good (≥3)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--available-medium);"></div>
+                <span>Limited (2)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--available-low);"></div>
+                <span>Low (1)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--available-none);"></div>
+                <span>Unavailable</span>
+            </div>
+        </div>
+
+        <!-- All Venues Grid -->
+        <div class="venues-grid" id="venuesGrid">
+            <!-- Venue cards will be rendered here -->
+        </div>
+    </div>
+
+    <footer class="text-center py-4 mt-4">
+        <small class="text-light">🏀 Get to work lil bro</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let allData = {};
+        let currentDate = null;
+        let currentFilter = 'all';
+
+        // Update clock every second
+        function updateClock() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit',
+                hour12: true 
+            });
+            const dateStr = now.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            document.getElementById('currentTime').textContent = timeStr;
+            document.getElementById('currentDateDisplay').textContent = dateStr;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Convert time string to minutes since midnight
+        function timeToMinutes(time24h) {
+            const [hours, minutes] = time24h.split(':').map(Number);
+            return hours * 60 + minutes;
+        }
+
+        // Get current time in minutes since midnight
+        function getCurrentMinutes() {
+            const now = new Date();
+            return now.getHours() * 60 + now.getMinutes();
+        }
+
+        // Calculate the interval (in minutes) for a venue's slots
+        function getSlotInterval(slots) {
+            if (slots.length < 2) return 60; // Default to 1 hour if can't calculate
+            
+            // Calculate interval from first two slots
+            const time1 = timeToMinutes(slots[0].time_24h);
+            const time2 = timeToMinutes(slots[1].time_24h);
+            return time2 - time1;
+        }
+
+        // Check if a time slot is currently active
+        function isCurrentSlot(time24h, slots, slotIndex) {
+            const now = getCurrentMinutes();
+            const slotStart = timeToMinutes(time24h);
+            const interval = getSlotInterval(slots);
+            
+            // For the last slot, it only lasts for the interval duration
+            const slotEnd = slotStart + interval;
+            
+            return now >= slotStart && now < slotEnd;
+        }
+
+        // Check if a time slot is within the next N hours from now
+        function isWithinNextHours(time24h, hours, slots) {
+            const now = getCurrentMinutes();
+            const slotStart = timeToMinutes(time24h);
+            const interval = getSlotInterval(slots);
+            const slotEnd = slotStart + interval;
+            const futureLimit = now + (hours * 60);
+            
+            // Slot is within range if it hasn't ended yet and starts before the future limit
+            return slotEnd > now && slotStart < futureLimit;
+        }
+
+        // Load data from API
+        async function loadData() {
+            try {
+                const response = await fetch('/api/data');
+                allData = await response.json();
+                
+                populateDateSelector();
+                
+                if (allData.last_updated) {
+                    document.getElementById('lastUpdated').textContent = 
+                        `Last updated: ${new Date(allData.last_updated).toLocaleString()}`;
+                }
+                
+                renderAll();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('venuesGrid').innerHTML = `
+                    <div class="no-data">
+                        <i class="bi bi-exclamation-triangle"></i> Error loading data. Run the scraper first.
+                    </div>
+                `;
+            }
+        }
+
+        function populateDateSelector() {
+            const dateSelector = document.getElementById('dateSelector');
+            dateSelector.innerHTML = '';
+            
+            // Collect all unique dates across all venues
+            const allDates = new Set();
+            Object.values(allData.venues || {}).forEach(venue => {
+                Object.keys(venue.days || {}).forEach(date => allDates.add(date));
+            });
+            
+            const dates = Array.from(allDates).sort();
+            const today = new Date().toISOString().split('T')[0];
+            
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.textContent = formatDate(date) + (date === today ? ' (Today)' : '');
+                dateSelector.appendChild(option);
+            });
+            
+            // Default to today if available
+            if (dates.includes(today)) {
+                currentDate = today;
+            } else if (dates.length > 0) {
+                currentDate = dates[0];
+            }
+            
+            if (currentDate) {
+                dateSelector.value = currentDate;
+            }
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { 
+                weekday: 'short', 
+                month: 'short', 
+                day: 'numeric'
+            });
+        }
+
+        function changeDate() {
+            currentDate = document.getElementById('dateSelector').value;
+            renderAll();
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === filter);
+            });
+            renderAll();
+        }
+
+        function filterSlots(slots) {
+            switch (currentFilter) {
+                case 'available':
+                    return slots.filter(s => s.available > 0);
+                case 'good':
+                    return slots.filter(s => s.available >= 3);
+                default:
+                    return slots;
+            }
+        }
+
+        function getAvailabilityClass(available) {
+            if (available === 0) return 'availability-none';
+            if (available === 1) return 'availability-low';
+            if (available === 2) return 'availability-medium';
+            return 'availability-high';
+        }
+
+        function getAvailabilityText(available, max) {
+            if (available === 0) return 'Unavailable';
+            return `${available}/${max}`;
+        }
+
+        function updateRealTimeStats() {
+            const today = new Date().toISOString().split('T')[0];
+            const venues = allData.venues || {};
+            const now = getCurrentMinutes();
+            
+            console.log(`[DEBUG] Today: ${today}, Current time: ${Math.floor(now/60)}:${now%60}`);
+            
+            let venuesNow = [];
+            let venuesNext2Hours = [];
+            
+            Object.entries(venues).forEach(([venueId, venue]) => {
+                const slots = venue.days?.[today] || [];
+                const interval = getSlotInterval(slots);
+                
+                console.log(`[DEBUG] ${venue.name}: ${slots.length} slots, interval: ${interval} min`);
+                
+                // Check for current slot (pass slots array for interval calculation)
+                const currentSlot = slots.find((s, idx) => isCurrentSlot(s.time_24h, slots, idx) && s.available > 0);
+                if (currentSlot) {
+                    console.log(`[DEBUG] ${venue.name} has current slot: ${currentSlot.time_slot}`);
+                    venuesNow.push({
+                        name: venue.name,
+                        available: currentSlot.available,
+                        max: currentSlot.max_slots,
+                        time: currentSlot.time_slot
+                    });
+                }
+                
+                // Check for slots in next 2 hours (pass slots array for interval calculation)
+                const next2HourSlots = slots.filter(s => isWithinNextHours(s.time_24h, 2, slots) && s.available > 0);
+                console.log(`[DEBUG] ${venue.name} next 2h slots:`, next2HourSlots.map(s => `${s.time_slot}(${s.available})`));
+                if (next2HourSlots.length > 0) {
+                    const bestSlot = next2HourSlots.reduce((a, b) => a.available > b.available ? a : b);
+                    venuesNext2Hours.push({
+                        name: venue.name,
+                        available: bestSlot.available,
+                        max: bestSlot.max_slots,
+                        time: bestSlot.time_slot,
+                        slotsCount: next2HourSlots.length
+                    });
+                }
+            });
+            
+            // Update "Now" stats
+            document.getElementById('statNowAvailable').textContent = venuesNow.length;
+            const nowList = document.getElementById('venuesNowList');
+            if (venuesNow.length > 0) {
+                nowList.innerHTML = venuesNow.map(v => `
+                    <div class="venue-list-item">
+                        <span><i class="bi bi-geo-alt"></i> ${v.name}</span>
+                        <span class="availability-badge ${getAvailabilityClass(v.available)}">${v.available}/${v.max}</span>
+                    </div>
+                `).join('');
+            } else {
+                nowList.innerHTML = '<div class="text-light text-center py-2">No venues available right now</div>';
+            }
+            
+            // Update "Next 2 Hours" stats
+            document.getElementById('statNext2Hours').textContent = venuesNext2Hours.length;
+            const next2List = document.getElementById('venuesNext2HoursList');
+            if (venuesNext2Hours.length > 0) {
+                next2List.innerHTML = venuesNext2Hours.map(v => `
+                    <div class="venue-list-item">
+                        <span><i class="bi bi-geo-alt"></i> ${v.name} <small class="text-light opacity-75">(${v.slotsCount} slots)</small></span>
+                        <span class="availability-badge ${getAvailabilityClass(v.available)}">${v.available}/${v.max}</span>
+                    </div>
+                `).join('');
+            } else {
+                next2List.innerHTML = '<div class="text-light text-center py-2">No venues available in next 2 hours</div>';
+            }
+        }
+
+        function renderVenuesGrid() {
+            const grid = document.getElementById('venuesGrid');
+            const venues = allData.venues || {};
+            
+            if (Object.keys(venues).length === 0) {
+                grid.innerHTML = '<div class="no-data">No venue data available. Run the scraper first.</div>';
+                return;
+            }
+            
+            grid.innerHTML = '';
+            
+            Object.entries(venues).forEach(([venueId, venue]) => {
+                const slots = venue.days?.[currentDate] || [];
+                const filteredSlots = filterSlots(slots);
+                
+                const card = document.createElement('div');
+                card.className = 'venue-card animate-in';
+                
+                const slotsHtml = filteredSlots.length > 0 
+                    ? filteredSlots.map((slot, idx) => {
+                        // Pass full slots array for interval calculation
+                        const isCurrent = isCurrentSlot(slot.time_24h, slots, slots.indexOf(slot));
+                        return `
+                            <div class="time-slot ${isCurrent ? 'current-slot' : ''}">
+                                <span class="time-slot-time">
+                                    ${isCurrent ? '<i class="bi bi-clock-fill text-warning"></i> ' : ''}
+                                    ${slot.time_slot}
+                                </span>
+                                <span class="availability-badge ${getAvailabilityClass(slot.available)}">
+                                    ${getAvailabilityText(slot.available, slot.max_slots)}
+                                </span>
+                            </div>
+                        `;
+                    }).join('')
+                    : '<div class="text-muted text-center py-3">No slots match filter</div>';
+                
+                const availableCount = slots.filter(s => s.available > 0).length;
+                const totalCount = slots.length;
+                
+                card.innerHTML = `
+                    <div class="venue-card-header">
+                        <i class="bi bi-geo-alt"></i> ${venue.name}
+                        <small class="float-end">${availableCount}/${totalCount} available</small>
+                    </div>
+                    <div class="venue-card-body">
+                        ${slotsHtml}
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        function renderAll() {
+            updateRealTimeStats();
+            renderVenuesGrid();
+        }
+
+        // Update real-time stats every minute
+        setInterval(updateRealTimeStats, 60000);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
