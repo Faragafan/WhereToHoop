@@ -39,5 +39,7 @@ RUN playwright install chromium
 # Copy application code
 COPY . .
 
-# Run the application (uses $PORT from Render)
-CMD gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120
+
+EXPOSE 10000
+
+CMD ["sh", "-c", "gunicorn app:app --bind 0.0.0.0:${PORT:-10000} --timeout 120"]
