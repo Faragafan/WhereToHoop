@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 import sys
+import threading
 
 # Import scraper functions
 from scraper import scrape_calendar_parallel, save_data
@@ -15,6 +16,10 @@ from scraper import scrape_calendar_parallel, save_data
 app = Flask(__name__)
 
 DATA_FILE = Path(__file__).parent / "data" / "availability.json"
+
+# Thread lock to prevent concurrent scrapes
+scrape_lock = threading.Lock()
+scrape_in_progress = False
 
 
 def load_data():
@@ -25,32 +30,63 @@ def load_data():
     return {"venues": {}, "last_updated": None}
 
 
-def run_scraper():
-    """Run the parallel scraper and save data."""
+def run_scraper_background():
+    """Run the parallel scraper in background and save data."""
+    global scrape_in_progress
     try:
+        print("🔄 Starting scraper...")
         all_venue_data = scrape_calendar_parallel(headless=True, max_workers=6)
         save_data(all_venue_data)
+        print("✅ Scraper completed!")
         return True
     except Exception as e:
         print(f"❌ Scraper error: {e}")
         return False
+    finally:
+        with scrape_lock:
+            scrape_in_progress = False
 
 
 @app.route('/')
 def index():
-    """Main dashboard page - scrapes all venues in parallel then renders."""
-    run_scraper()
+    """Main dashboard page - loads instantly with cached data."""
     return render_template('index.html')
+
+
+@app.route('/health')
+def health():
+    """Health check endpoint for Render."""
+    return jsonify({"status": "ok"}), 200
 
 
 @app.route('/api/refresh', methods=['POST'])
 def refresh_data():
-    """API endpoint to trigger a data refresh."""
-    success = run_scraper()
-    if success:
-        return jsonify({"status": "success", "message": "Data refreshed"})
-    else:
-        return jsonify({"status": "error", "message": "Scrape failed"}), 500
+    """API endpoint to trigger a data refresh in background."""
+    global scrape_in_progress
+    
+    with scrape_lock:
+        if scrape_in_progress:
+            return jsonify({
+                "status": "already_running", 
+                "message": "Scrape already in progress"
+            }), 202
+        scrape_in_progress = True
+    
+    # Run scraper in a background thread
+    thread = threading.Thread(target=run_scraper_background, daemon=True)
+    thread.start()
+    
+    return jsonify({
+        "status": "started", 
+        "message": "Refresh started in background"
+    })
+
+
+@app.route('/api/refresh/status')
+def refresh_status():
+    """Check if a refresh is currently running."""
+    return jsonify({"in_progress": scrape_in_progress})
+
 @app.route('/api/data')
 def get_data():
     """API endpoint to get all availability data."""
