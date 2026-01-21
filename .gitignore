@@ -19,3 +19,7 @@ Thumbs.db
 
 # Local data (will be regenerated)
 data/availability.json
+
+# Playwright browsers (not needed in Docker)
+pw-browsers/
+.browsers/
