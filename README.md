@@ -15,19 +15,17 @@ Tired of showing up to the courts only to find them fully booked? **Where to Hoo
 | Venue | Location |
 |-------|----------|
 | Aqualink | Box Hill |
-| Boroondara Leisure | Hawthorn |
+| Boroondara Sports Complex | Balwyn |
 | Carlton Baths | Carlton |
-| Darebin | Preston/Reservoir |
-| Macleod | Macleod |
-| Sportslink | Box Hill |
+| Narrandjeri Stadium | Thornbury |
+| Macleod Recreation & Fitness Centre| Macleod |
+| Sportslink | Vermont South |
 
 ## Features
 
-- 🚀 **Parallel scraping** - All 6 venues scraped simultaneously (~12 seconds)
+- 🕐 **Real-time clock** - See current time and where is available right now
 - 📱 **Mobile-friendly** - Check availability from your phone
-- 🕐 **Real-time clock** - See current time and what's available right now
 - 📅 **Multi-day view** - Check availability for the next 5-7 days
-- 🎨 **Color-coded slots** - Green (good), Yellow (limited), Orange (low), Red (full)
 - 🔍 **Filters** - Show all slots, available only, or slots with 3+ spots
 
 ## Screenshots
@@ -133,7 +131,3 @@ This project scrapes publicly available booking calendars for personal use. Plea
 ## License
 
 MIT
-
----
-
-Made with 🏀 in Melbourne
