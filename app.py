@@ -5,21 +5,23 @@ A Flask web application to visualize basketball court availability.
 
 from flask import Flask, render_template, jsonify, request
 import json
+import os
 from pathlib import Path
 from datetime import datetime
 import sys
 import threading
+import traceback
 
 # Import scraper functions
-from scraper import scrape_calendar_parallel, save_data
+from scraper import scrape_calendar_parallel, save_data, DATA_FILE
 
 app = Flask(__name__)
-
-DATA_FILE = Path(__file__).parent / "data" / "availability.json"
 
 # Thread lock to prevent concurrent scrapes
 scrape_lock = threading.Lock()
 scrape_in_progress = False
+last_scrape_success = None
+last_scrape_error = None
 
 
 def load_data():
@@ -32,15 +34,19 @@ def load_data():
 
 def run_scraper_background():
     """Run the parallel scraper in background and save data."""
-    global scrape_in_progress
+    global scrape_in_progress, last_scrape_success, last_scrape_error
     try:
         print("🔄 Starting scraper...")
-        all_venue_data = scrape_calendar_parallel(headless=True, max_workers=6)
+        all_venue_data = scrape_calendar_parallel(headless=True)
         save_data(all_venue_data)
         print("✅ Scraper completed!")
+        last_scrape_success = datetime.now().isoformat()
+        last_scrape_error = None
         return True
     except Exception as e:
-        print(f"❌ Scraper error: {e}")
+        error_msg = f"{str(e)}\n{traceback.format_exc()}"
+        print(f"❌ Scraper error: {error_msg}")
+        last_scrape_error = str(e)
         return False
     finally:
         with scrape_lock:
@@ -94,8 +100,12 @@ def refresh_data():
 
 @app.route('/api/refresh/status')
 def refresh_status():
-    """Check if a refresh is currently running."""
-    return jsonify({"in_progress": scrape_in_progress})
+    """Check if a refresh is currently running with detailed status."""
+    return jsonify({
+        "in_progress": scrape_in_progress,
+        "last_success": last_scrape_success,
+        "last_error": last_scrape_error
+    })
 
 @app.route('/api/data')
 def get_data():

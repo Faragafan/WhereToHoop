@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 import time
 import json
 import re
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -35,9 +36,12 @@ VENUES = {
     }
 }
 
+# Support persistent data directory (for Render persistent disk)
+DATA_DIR = os.environ.get('DATA_DIR', str(Path(__file__).parent / "data"))
+DATA_FILE = Path(DATA_DIR) / "availability.json"
 
-
-DATA_FILE = Path(__file__).parent / "data" / "availability.json"
+# Cloud-friendly concurrency (default 1 for Render free tier)
+DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '1'))
 
 
 def parse_availability(text):
@@ -159,7 +163,16 @@ def scrape_venue(page, url, venue_name, headless=False):
 def scrape_venue_standalone(venue_id, venue_info, headless=True):
     """Scrape a single venue in its own browser context (for parallel execution)."""
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=headless)
+        # Container-friendly browser launch args
+        browser = p.chromium.launch(
+            headless=headless,
+            args=[
+                '--no-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
+                '--disable-software-rasterizer'
+            ]
+        )
         page = browser.new_page()
         try:
             days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
@@ -178,10 +191,13 @@ def scrape_venue_standalone(venue_id, venue_info, headless=True):
             browser.close()
 
 
-def scrape_calendar_parallel(headless=True, venues=None, max_workers=6):
+def scrape_calendar_parallel(headless=True, venues=None, max_workers=None):
     """Scrape all venues in parallel for much faster execution."""
     if venues is None:
         venues = VENUES
+    
+    if max_workers is None:
+        max_workers = DEFAULT_MAX_WORKERS
     
     all_venue_data = {}
     completed_count = 0
@@ -190,7 +206,7 @@ def scrape_calendar_parallel(headless=True, venues=None, max_workers=6):
     lock = threading.Lock()
     
     print(f"\n{'='*60}")
-    print(f"🏀 SCRAPING {total_venues} VENUES IN PARALLEL")
+    print(f"🏀 SCRAPING {total_venues} VENUES (max_workers={max_workers})")
     print(f"{'='*60}")
     
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
