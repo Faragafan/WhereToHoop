@@ -6,6 +6,9 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
 
+permissions:
+  contents: write  # Allow workflow to commit and push changes
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
