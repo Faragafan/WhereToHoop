@@ -163,15 +163,10 @@ def scrape_venue(page, url, venue_name, headless=False):
 def scrape_venue_standalone(venue_id, venue_info, headless=True):
     """Scrape a single venue in its own browser context (for parallel execution)."""
     with sync_playwright() as p:
-        # Container-friendly browser launch args
+        # CI/CD-friendly browser launch args
         browser = p.chromium.launch(
             headless=headless,
-            args=[
-                '--no-sandbox',
-                '--disable-dev-shm-usage',
-                '--disable-gpu',
-                '--disable-software-rasterizer'
-            ]
+            args=['--no-sandbox', '--disable-dev-shm-usage']
         )
         page = browser.new_page()
         try:
@@ -326,6 +321,13 @@ def print_table(all_venue_data):
 
 
 if __name__ == "__main__":
-    all_venue_data = scrape_calendar()
-    print_table(all_venue_data)
+    print("🏀 Basketball Court Availability Scraper")
+    print("=" * 60)
+    print(f"Scraping {len(VENUES)} venues...")
+    print("=" * 60)
+    
+    # Always run headless in CI/CD mode
+    all_venue_data = scrape_calendar_parallel(headless=True)
     save_data(all_venue_data)
+    
+    print("\n✅ Scraping complete! Data saved to data/availability.json")

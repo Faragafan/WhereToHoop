@@ -1,27 +1,17 @@
 """                                                                                                                                                          
 Basketball Court Availability Dashboard
 A Flask web application to visualize basketball court availability.
+Data is refreshed automatically via GitHub Actions cron job.
 """
 
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify
 import json
-import os
 from pathlib import Path
-from datetime import datetime
-import sys
-import threading
-import traceback
 
-# Import scraper functions
-from scraper import scrape_calendar_parallel, save_data, DATA_FILE
+# Import only the data file path
+from scraper import DATA_FILE
 
 app = Flask(__name__)
-
-# Thread lock to prevent concurrent scrapes
-scrape_lock = threading.Lock()
-scrape_in_progress = False
-last_scrape_success = None
-last_scrape_error = None
 
 
 def load_data():
@@ -32,40 +22,9 @@ def load_data():
     return {"venues": {}, "last_updated": None}
 
 
-def run_scraper_background():
-    """Run the parallel scraper in background and save data."""
-    global scrape_in_progress, last_scrape_success, last_scrape_error
-    try:
-        print("🔄 Starting scraper...")
-        all_venue_data = scrape_calendar_parallel(headless=True)
-        save_data(all_venue_data)
-        print("✅ Scraper completed!")
-        last_scrape_success = datetime.now().isoformat()
-        last_scrape_error = None
-        return True
-    except Exception as e:
-        error_msg = f"{str(e)}\n{traceback.format_exc()}"
-        print(f"❌ Scraper error: {error_msg}")
-        last_scrape_error = str(e)
-        return False
-    finally:
-        with scrape_lock:
-            scrape_in_progress = False
-
-
 @app.route('/')
 def index():
     """Main dashboard page - loads instantly with cached data."""
-    # Auto-scrape on first visit if no data exists
-    if not DATA_FILE.exists():
-        print("🔄 No data found - triggering initial scrape...")
-        global scrape_in_progress
-        with scrape_lock:
-            if not scrape_in_progress:
-                scrape_in_progress = True
-                thread = threading.Thread(target=run_scraper_background, daemon=True)
-                thread.start()
-    
     return render_template('index.html')
 
 
@@ -74,38 +33,6 @@ def health():
     """Health check endpoint for Render."""
     return jsonify({"status": "ok"}), 200
 
-
-@app.route('/api/refresh', methods=['POST'])
-def refresh_data():
-    """API endpoint to trigger a data refresh in background."""
-    global scrape_in_progress
-    
-    with scrape_lock:
-        if scrape_in_progress:
-            return jsonify({
-                "status": "already_running", 
-                "message": "Scrape already in progress"
-            }), 202
-        scrape_in_progress = True
-    
-    # Run scraper in a background thread
-    thread = threading.Thread(target=run_scraper_background, daemon=True)
-    thread.start()
-    
-    return jsonify({
-        "status": "started", 
-        "message": "Refresh started in background"
-    })
-
-
-@app.route('/api/refresh/status')
-def refresh_status():
-    """Check if a refresh is currently running with detailed status."""
-    return jsonify({
-        "in_progress": scrape_in_progress,
-        "last_success": last_scrape_success,
-        "last_error": last_scrape_error
-    })
 
 @app.route('/api/data')
 def get_data():

@@ -257,9 +257,9 @@
             </a>
             <div class="d-flex align-items-center gap-3">
                 <span class="last-updated" id="lastUpdated"></span>
-                <button class="btn btn-outline-light btn-sm refresh-btn" onclick="triggerRefresh()" id="refreshBtn">
-                    <i class="bi bi-arrow-clockwise"></i> Refresh
-                </button>
+                <small class="text-light opacity-75">
+                    <i class="bi bi-clock-history"></i> Auto-refreshes every 30 min
+                </small>
             </div>
         </div>
     </nav>
@@ -369,68 +369,11 @@
         setInterval(updateClock, 1000);
         updateClock();
 
-        // Trigger refresh and poll for completion
-        async function triggerRefresh() {
-            const btn = document.getElementById('refreshBtn');
-            btn.disabled = true;
-            btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refreshing...';
-            
-            try {
-                // Trigger the scraper
-                const response = await fetch('/api/refresh', { method: 'POST' });
-                const result = await response.json();
-                
-                if (result.status === 'started' || result.status === 'already_running') {
-                    let pollCount = 0;
-                    const maxPolls = 150; // 5 minutes at 2s intervals
-                    
-                    // Poll for completion
-                    const checkStatus = setInterval(async () => {
-                        pollCount++;
-                        
-                        try {
-                            const statusRes = await fetch('/api/refresh/status');
-                            const statusData = await statusRes.json();
-                            
-                            // Update button text with poll count
-                            const elapsed = Math.floor(pollCount * 2);
-                            btn.innerHTML = `<i class="bi bi-arrow-clockwise"></i> Refreshing... (${elapsed}s)`;
-                            
-                            if (!statusData.in_progress) {
-                                clearInterval(checkStatus);
-                                
-                                if (statusData.last_error) {
-                                    btn.disabled = false;
-                                    btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
-                                    alert('Refresh failed: ' + statusData.last_error);
-                                } else {
-                                    // Success - reload data without full page refresh
-                                    btn.innerHTML = '<i class="bi bi-check-circle"></i> Success!';
-                                    await loadData();
-                                    setTimeout(() => {
-                                        btn.disabled = false;
-                                        btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
-                                    }, 2000);
-                                }
-                            } else if (pollCount >= maxPolls) {
-                                // Still running after 5 minutes - inform user but keep scraper going
-                                clearInterval(checkStatus);
-                                btn.disabled = false;
-                                btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
-                                alert('Refresh is taking longer than expected. It may still be running in the background. Try refreshing the page in a minute.');
-                            }
-                        } catch (err) {
-                            console.error('Status check error:', err);
-                        }
-                    }, 2000); // Check every 2 seconds
-                }
-            } catch (error) {
-                console.error('Refresh error:', error);
-                btn.disabled = false;
-                btn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
-                alert('Refresh failed to start. Please try again.');
-            }
-        }
+        // Auto-reload data every 2 minutes to stay fresh with GitHub Actions updates
+        setInterval(() => {
+            console.log('Auto-reloading data...');
+            loadData();
+        }, 120000); // 2 minutes
 
         // Convert time string to minutes since midnight
         function timeToMinutes(time24h) {
