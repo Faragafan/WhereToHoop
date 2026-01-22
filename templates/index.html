@@ -258,7 +258,7 @@
             <div class="d-flex align-items-center gap-3">
                 <span class="last-updated" id="lastUpdated"></span>
                 <small class="text-light opacity-75">
-                    <i class="bi bi-clock-history"></i> Auto-refreshes every 30 min
+                    <i class="bi bi-clock-history"></i> Auto-refreshes daily at midnight
                 </small>
             </div>
         </div>
@@ -350,13 +350,15 @@
         // Update clock every second
         function updateClock() {
             const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-US', { 
+            const timeStr = now.toLocaleTimeString('en-AU', { 
+                timeZone: 'Australia/Melbourne',
                 hour: '2-digit', 
                 minute: '2-digit', 
                 second: '2-digit',
                 hour12: true 
             });
-            const dateStr = now.toLocaleDateString('en-US', { 
+            const dateStr = now.toLocaleDateString('en-AU', { 
+                timeZone: 'Australia/Melbourne',
                 weekday: 'long', 
                 year: 'numeric', 
                 month: 'long', 
@@ -430,8 +432,13 @@
                 populateDateSelector();
                 
                 if (allData.last_updated) {
+                    const lastUpdatedDate = new Date(allData.last_updated);
                     document.getElementById('lastUpdated').textContent = 
-                        `Last updated: ${new Date(allData.last_updated).toLocaleString()}`;
+                        `Last updated: ${lastUpdatedDate.toLocaleString('en-AU', { 
+                            timeZone: 'Australia/Melbourne',
+                            dateStyle: 'short',
+                            timeStyle: 'short'
+                        })}`;
                 }
                 
                 renderAll();
