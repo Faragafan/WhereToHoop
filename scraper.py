@@ -40,8 +40,8 @@ VENUES = {
 DATA_DIR = os.environ.get('DATA_DIR', str(Path(__file__).parent / "data"))
 DATA_FILE = Path(DATA_DIR) / "availability.json"
 
-# Cloud-friendly concurrency (default 1 for Render free tier)
-DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '1'))
+# Cloud-friendly concurrency (default 2 for Render free tier - balances speed and memory)
+DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '2'))
 
 
 def parse_availability(text):
