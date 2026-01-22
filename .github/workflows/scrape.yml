@@ -2,8 +2,8 @@ name: Scrape Basketball Court Availability
 
 on:
   schedule:
-    # Run every 30 minutes
-    - cron: '*/30 * * * *'
+    # Run daily at midnight Melbourne time (1 PM UTC = midnight AEDT, 2 PM UTC = midnight AEST)
+    - cron: '0 13 * * *'
   workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
 
 permissions:
