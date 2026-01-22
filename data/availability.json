@@ -1469,29 +1469,29 @@
           {
             "time_slot": "9:00 PM",
             "time_24h": "21:00",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
             "max_slots": 8
           },
           {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
             "max_slots": 8
           },
           {
             "time_slot": "10:00 PM",
             "time_24h": "22:00",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
             "max_slots": 8
           },
           {
             "time_slot": "10:30 PM",
             "time_24h": "22:30",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
             "max_slots": 8
           }
         ],
@@ -6403,5 +6403,5 @@
       }
     }
   },
-  "last_updated": "2026-01-22T20:20:07.024376"
+  "last_updated": "2026-01-22T09:29:44.550592"
 }
