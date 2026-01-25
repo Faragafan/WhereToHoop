@@ -2,22 +2,31 @@ name: Scrape Basketball Court Availability
 
 on:
   schedule:
-    # Run daily at midnight Melbourne time (1 PM UTC = midnight AEDT, 2 PM UTC = midnight AEST)
-    - cron: '0 13 * * *'
+    # Run daily at midnight Melbourne time (AEDT = UTC+11, AEST = UTC+10)
+    # Using both times to cover daylight saving transitions
+    - cron: '0 13 * * *'  # midnight AEDT (summer)
+    - cron: '0 14 * * *'  # midnight AEST (winter)
   workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
 
 permissions:
   contents: write  # Allow workflow to commit and push changes
 
+# Prevent concurrent runs from overlapping
+concurrency:
+  group: scrape-data
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # Fail if scraping takes too long
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
       
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -35,14 +44,30 @@ jobs:
           playwright install chromium --with-deps
       
       - name: Run scraper
+        id: scrape
         run: |
           python scraper.py
+        continue-on-error: true
+      
+      - name: Check scraper result
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::warning::Scraper failed, but continuing to check if partial data was saved"
       
       - name: Commit and push updated data
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/availability.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: Basketball court availability data [$(date +'%Y-%m-%d %H:%M:%S UTC')]" && git push)
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🏀 Auto-update: Basketball court availability [$(date +'%Y-%m-%d %H:%M:%S UTC')]"
+            git push
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Fail if scraper failed
+        if: steps.scrape.outcome == 'failure'
+        run: exit 1
