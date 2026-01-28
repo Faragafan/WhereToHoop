@@ -1,336 +1,82 @@
 {
   "venues": {
-    "sportslink": {
-      "name": "Sportslink",
+    "boroondara": {
+      "name": "Boroondara Leisure",
       "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          }
-        ],
         "2026-01-28": [
           {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "availability_text": "4 / 5 AVAILABLE",
+            "available": 4,
             "max_slots": 5
           },
           {
             "time_slot": "8:30 AM",
             "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
             "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
           },
           {
             "time_slot": "9:30 AM",
             "time_24h": "09:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           },
           {
             "time_slot": "10:30 AM",
             "time_24h": "10:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           },
           {
             "time_slot": "11:30 AM",
             "time_24h": "11:30",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           },
           {
             "time_slot": "12:30 PM",
             "time_24h": "12:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
+            "availability_text": "3 / 5 AVAILABLE",
+            "available": 3,
+            "max_slots": 5
           },
           {
             "time_slot": "1:30 PM",
             "time_24h": "13:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
           },
           {
             "time_slot": "2:30 PM",
             "time_24h": "14:30",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
+            "availability_text": "3 / 5 AVAILABLE",
+            "available": 3,
+            "max_slots": 5
           },
           {
             "time_slot": "3:30 PM",
             "time_24h": "15:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -343,22 +89,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "5:30 PM",
             "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -371,13 +103,6 @@
             "max_slots": 5
           },
           {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "7:30 PM",
             "time_24h": "19:30",
             "availability_text": "NOT AVAILABLE",
@@ -385,178 +110,101 @@
             "max_slots": 5
           },
           {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
-          },
-          {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           }
         ],
         "2026-01-29": [
           {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "availability_text": "4 / 5 AVAILABLE",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "availability_text": "4 / 5 AVAILABLE",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
             "max_slots": 5
           },
           {
             "time_slot": "8:30 AM",
             "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "2 / 5 AVAILABLE",
+            "available": 2,
             "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
           },
           {
             "time_slot": "9:30 AM",
             "time_24h": "09:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           },
           {
             "time_slot": "10:30 AM",
             "time_24h": "10:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
+            "max_slots": 5
           },
           {
             "time_slot": "11:30 AM",
             "time_24h": "11:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
+            "availability_text": "2 / 5 AVAILABLE",
+            "available": 2,
+            "max_slots": 5
           },
           {
             "time_slot": "12:30 PM",
             "time_24h": "12:30",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
           },
           {
             "time_slot": "1:30 PM",
             "time_24h": "13:30",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
           },
           {
             "time_slot": "2:30 PM",
             "time_24h": "14:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
+            "availability_text": "5 / 5 AVAILABLE",
+            "available": 5,
+            "max_slots": 5
           },
           {
             "time_slot": "3:30 PM",
             "time_24h": "15:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "2 / 8 AVAILABLE",
+            "availability_text": "2 / 5 AVAILABLE",
             "available": 2,
-            "max_slots": 8
+            "max_slots": 5
           },
           {
             "time_slot": "4:30 PM",
             "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -569,22 +217,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
             "time_slot": "6:30 PM",
             "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -597,13 +231,6 @@
             "max_slots": 5
           },
           {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
             "availability_text": "NOT AVAILABLE",
@@ -611,29 +238,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -641,22 +247,29 @@
         ],
         "2026-01-30": [
           {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "availability_text": "3 / 5 AVAILABLE",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
             "max_slots": 5
           },
           {
             "time_slot": "8:30 AM",
             "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -669,22 +282,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "10:30 AM",
             "time_24h": "10:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -697,22 +296,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "12:30 PM",
             "time_24h": "12:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -725,22 +310,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "2:30 PM",
             "time_24h": "14:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -753,22 +324,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "4:30 PM",
             "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -781,22 +338,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
             "time_slot": "6:30 PM",
             "time_24h": "18:30",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -804,113 +347,71 @@
           {
             "time_slot": "7:30 PM",
             "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "2 / 5 AVAILABLE",
+            "available": 2,
             "max_slots": 5
           },
           {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "2 / 5 AVAILABLE",
+            "available": 2,
             "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
           },
           {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "4 / 5 AVAILABLE",
+            "available": 4,
             "max_slots": 5
           }
         ],
         "2026-01-31": [
           {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "8:30 AM",
             "time_24h": "08:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "9:30 AM",
             "time_24h": "09:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "10:30 AM",
             "time_24h": "10:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "11:30 AM",
             "time_24h": "11:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -923,22 +424,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
-          },
-          {
             "time_slot": "1:30 PM",
             "time_24h": "13:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -951,50 +438,22 @@
             "max_slots": 5
           },
           {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
           },
           {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
             "time_slot": "4:30 PM",
             "time_24h": "16:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "5:30 PM",
             "time_24h": "17:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -1002,13 +461,6 @@
           {
             "time_slot": "6:30 PM",
             "time_24h": "18:30",
-            "availability_text": "1 / 8 AVAILABLE",
-            "available": 1,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -1021,13 +473,6 @@
             "max_slots": 5
           },
           {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
             "availability_text": "NOT AVAILABLE",
@@ -1035,29 +480,8 @@
             "max_slots": 5
           },
           {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -1065,677 +489,6 @@
         ],
         "2026-02-01": [
           {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "3 / 8 AVAILABLE",
-            "available": 3,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
-            "availability_text": "6 / 8 AVAILABLE",
-            "available": 6,
-            "max_slots": 8
-          }
-        ],
-        "2026-02-02": [
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "7 / 8 AVAILABLE",
-            "available": 7,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "8 / 8 AVAILABLE",
-            "available": 8,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "4 / 8 AVAILABLE",
-            "available": 4,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "2 / 8 AVAILABLE",
-            "available": 2,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 PM",
-            "time_24h": "22:00",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          },
-          {
-            "time_slot": "10:30 PM",
-            "time_24h": "22:30",
-            "availability_text": "5 / 8 AVAILABLE",
-            "available": 5,
-            "max_slots": 8
-          }
-        ]
-      }
-    },
-    "boroondara": {
-      "name": "Boroondara Leisure",
-      "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "availability_text": "4 / 5 AVAILABLE",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "2 / 5 AVAILABLE",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "4 / 5 AVAILABLE",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "4 / 5 AVAILABLE",
-            "available": 4,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-28": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "availability_text": "4 / 5 AVAILABLE",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-29": [
-          {
             "time_slot": "5:30 AM",
             "time_24h": "05:30",
             "availability_text": "4 / 5 AVAILABLE",
@@ -1752,8 +505,8 @@
           {
             "time_slot": "7:30 AM",
             "time_24h": "07:30",
-            "availability_text": "5 / 5 AVAILABLE",
-            "available": 5,
+            "availability_text": "4 / 5 AVAILABLE",
+            "available": 4,
             "max_slots": 5
           },
           {
@@ -1773,8 +526,8 @@
           {
             "time_slot": "10:30 AM",
             "time_24h": "10:30",
-            "availability_text": "1 / 5 AVAILABLE",
-            "available": 1,
+            "availability_text": "2 / 5 AVAILABLE",
+            "available": 2,
             "max_slots": 5
           },
           {
@@ -1815,253 +568,11 @@
           {
             "time_slot": "4:30 PM",
             "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-30": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "availability_text": "3 / 5 AVAILABLE",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
             "availability_text": "1 / 5 AVAILABLE",
             "available": 1,
             "max_slots": 5
           },
           {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "2 / 5 AVAILABLE",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "2 / 5 AVAILABLE",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "4 / 5 AVAILABLE",
-            "available": 4,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-31": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
             "time_slot": "5:30 PM",
             "time_24h": "17:30",
             "availability_text": "NOT AVAILABLE",
@@ -2085,15 +596,15 @@
           {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "1 / 5 AVAILABLE",
+            "available": 1,
             "max_slots": 5
           },
           {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
+            "availability_text": "3 / 5 AVAILABLE",
+            "available": 3,
             "max_slots": 5
           }
         ]
@@ -2102,99 +613,6 @@
     "darebin": {
       "name": "Darebin",
       "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "2 / 4 AVAILABLE",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "1 / 4 AVAILABLE",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "2 / 4 AVAILABLE",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "2 / 4 AVAILABLE",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "4 / 4 AVAILABLE",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "3 / 4 AVAILABLE",
-            "available": 3,
-            "max_slots": 4
-          }
-        ],
         "2026-01-28": [
           {
             "time_slot": "9:00 AM",
@@ -2227,8 +645,8 @@
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "availability_text": "3 / 4 AVAILABLE",
-            "available": 3,
+            "availability_text": "2 / 4 AVAILABLE",
+            "available": 2,
             "max_slots": 4
           },
           {
@@ -2262,27 +680,20 @@
           {
             "time_slot": "6:00 PM",
             "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 4 AVAILABLE",
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "7:00 PM",
             "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 4 AVAILABLE",
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -2372,13 +783,6 @@
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
           }
         ],
         "2026-01-30": [
@@ -2465,13 +869,6 @@
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
           }
         ],
         "2026-01-31": [
@@ -2548,23 +945,16 @@
           {
             "time_slot": "7:00 PM",
             "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 4 AVAILABLE",
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "2 / 4 AVAILABLE",
+            "available": 2,
+            "max_slots": 4
           }
         ],
         "2026-02-01": [
@@ -2648,13 +1038,6 @@
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -2744,6 +1127,493 @@
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
+          }
+        ],
+        "2026-02-03": [
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "2 / 4 AVAILABLE",
+            "available": 2,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "3 / 4 AVAILABLE",
+            "available": 3,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "2 / 4 AVAILABLE",
+            "available": 2,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "2 / 4 AVAILABLE",
+            "available": 2,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "4 / 4 AVAILABLE",
+            "available": 4,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ]
+      }
+    },
+    "sportslink": {
+      "name": "Sportslink",
+      "days": {
+        "2026-01-28": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          }
+        ],
+        "2026-01-29": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "9:00 PM",
@@ -2751,6 +1621,1087 @@
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-01-30": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "3 / 8 AVAILABLE",
+            "available": 3,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-01-31": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-02-01": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "3 / 8 AVAILABLE",
+            "available": 3,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "6 / 8 AVAILABLE",
+            "available": 6,
+            "max_slots": 8
+          }
+        ],
+        "2026-02-02": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          }
+        ],
+        "2026-02-03": [
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "3 / 8 AVAILABLE",
+            "available": 3,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "8 / 8 AVAILABLE",
+            "available": 8,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "7 / 8 AVAILABLE",
+            "available": 7,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "1 / 8 AVAILABLE",
+            "available": 1,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "2 / 8 AVAILABLE",
+            "available": 2,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "4 / 8 AVAILABLE",
+            "available": 4,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:00 PM",
+            "time_24h": "22:00",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
+          },
+          {
+            "time_slot": "10:30 PM",
+            "time_24h": "22:30",
+            "availability_text": "5 / 8 AVAILABLE",
+            "available": 5,
+            "max_slots": 8
           }
         ]
       }
@@ -2758,113 +2709,6 @@
     "macleod": {
       "name": "Macleod",
       "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
         "2026-01-28": [
           {
             "time_slot": "6:00 AM",
@@ -3211,9 +3055,9 @@
           {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "availability_text": "1 / 1 AVAILABLE",
-            "available": 1,
-            "max_slots": 1
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "10:00 AM",
@@ -3288,581 +3132,6 @@
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ]
-      }
-    },
-    "aqualink": {
-      "name": "Aqualink",
-      "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "5 / 6 AVAILABLE",
-            "available": 5,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "1 / 6 AVAILABLE",
-            "available": 1,
-            "max_slots": 6
-          }
-        ],
-        "2026-01-28": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "5 / 6 AVAILABLE",
-            "available": 5,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-29": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          }
-        ],
-        "2026-01-30": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-01-31": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "2 / 6 AVAILABLE",
-            "available": 2,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "3 / 6 AVAILABLE",
-            "available": 3,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -3872,186 +3141,72 @@
           {
             "time_slot": "6:00 AM",
             "time_24h": "06:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "7:00 AM",
             "time_24h": "07:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "5 / 6 AVAILABLE",
-            "available": 5,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "1 / 6 AVAILABLE",
+            "availability_text": "1 / 1 AVAILABLE",
             "available": 1,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-02-02": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "max_slots": 1
           },
           {
             "time_slot": "8:00 AM",
             "time_24h": "08:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "availability_text": "1 / 1 AVAILABLE",
+            "available": 1,
+            "max_slots": 1
           },
           {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "availability_text": "4 / 6 AVAILABLE",
-            "available": 4,
-            "max_slots": 6
+            "availability_text": "1 / 1 AVAILABLE",
+            "available": 1,
+            "max_slots": 1
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "availability_text": "1 / 1 AVAILABLE",
+            "available": 1,
+            "max_slots": 1
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "availability_text": "6 / 6 AVAILABLE",
-            "available": 6,
-            "max_slots": 6
+            "availability_text": "1 / 1 AVAILABLE",
+            "available": 1,
+            "max_slots": 1
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 1 AVAILABLE",
+            "available": 1,
+            "max_slots": 1
           },
           {
             "time_slot": "4:00 PM",
@@ -4084,13 +3239,6 @@
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
             "availability_text": "NOT AVAILABLE",
             "available": 0,
             "max_slots": 5
@@ -4101,456 +3249,6 @@
     "carltonbaths": {
       "name": "Carlton Baths",
       "days": {
-        "2026-01-27": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "6:15 AM",
-            "time_24h": "06:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "6:45 AM",
-            "time_24h": "06:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "7:15 AM",
-            "time_24h": "07:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "7:45 AM",
-            "time_24h": "07:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "8:15 AM",
-            "time_24h": "08:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "8:45 AM",
-            "time_24h": "08:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "9:15 AM",
-            "time_24h": "09:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "9:45 AM",
-            "time_24h": "09:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "10:15 AM",
-            "time_24h": "10:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "10:45 AM",
-            "time_24h": "10:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "11:15 AM",
-            "time_24h": "11:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "11:45 AM",
-            "time_24h": "11:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "12:15 PM",
-            "time_24h": "12:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "12:45 PM",
-            "time_24h": "12:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "1:15 PM",
-            "time_24h": "13:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "1:45 PM",
-            "time_24h": "13:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "2:15 PM",
-            "time_24h": "14:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "2:45 PM",
-            "time_24h": "14:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "3:15 PM",
-            "time_24h": "15:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "3:45 PM",
-            "time_24h": "15:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:15 PM",
-            "time_24h": "16:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:45 PM",
-            "time_24h": "16:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "5:15 PM",
-            "time_24h": "17:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "5:45 PM",
-            "time_24h": "17:45",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:15 PM",
-            "time_24h": "18:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:45 PM",
-            "time_24h": "18:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:15 PM",
-            "time_24h": "19:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:45 PM",
-            "time_24h": "19:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:15 PM",
-            "time_24h": "20:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:45 PM",
-            "time_24h": "20:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:15 PM",
-            "time_24h": "21:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:45 PM",
-            "time_24h": "21:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
         "2026-01-28": [
           {
             "time_slot": "6:00 AM",
@@ -5623,16 +4321,16 @@
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "12:15 PM",
             "time_24h": "12:15",
-            "availability_text": "1 / 2 AVAILABLE",
-            "available": 1,
-            "max_slots": 2
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "12:30 PM",
@@ -5961,58 +4659,58 @@
           {
             "time_slot": "8:00 AM",
             "time_24h": "08:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "8:15 AM",
             "time_24h": "08:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "8:30 AM",
             "time_24h": "08:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "8:45 AM",
             "time_24h": "08:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "9:15 AM",
             "time_24h": "09:15",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "9:30 AM",
             "time_24h": "09:30",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "9:45 AM",
             "time_24h": "09:45",
-            "availability_text": "NOT AVAILABLE",
-            "available": 0,
-            "max_slots": 5
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
           },
           {
             "time_slot": "10:00 AM",
@@ -6350,9 +5048,1262 @@
             "available": 0,
             "max_slots": 5
           }
+        ],
+        "2026-02-01": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "6:15 AM",
+            "time_24h": "06:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "6:45 AM",
+            "time_24h": "06:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "7:15 AM",
+            "time_24h": "07:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "7:45 AM",
+            "time_24h": "07:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "8:15 AM",
+            "time_24h": "08:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "8:45 AM",
+            "time_24h": "08:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "9:15 AM",
+            "time_24h": "09:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:45 AM",
+            "time_24h": "09:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:15 AM",
+            "time_24h": "10:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:45 AM",
+            "time_24h": "10:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:15 AM",
+            "time_24h": "11:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "11:45 AM",
+            "time_24h": "11:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "12:15 PM",
+            "time_24h": "12:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "12:45 PM",
+            "time_24h": "12:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "1:15 PM",
+            "time_24h": "13:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "1:45 PM",
+            "time_24h": "13:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "2:15 PM",
+            "time_24h": "14:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "2:45 PM",
+            "time_24h": "14:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "3:15 PM",
+            "time_24h": "15:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "3:45 PM",
+            "time_24h": "15:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "4:15 PM",
+            "time_24h": "16:15",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "4:45 PM",
+            "time_24h": "16:45",
+            "availability_text": "1 / 2 AVAILABLE",
+            "available": 1,
+            "max_slots": 2
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:15 PM",
+            "time_24h": "17:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:45 PM",
+            "time_24h": "17:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:15 PM",
+            "time_24h": "18:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:45 PM",
+            "time_24h": "18:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:15 PM",
+            "time_24h": "19:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:45 PM",
+            "time_24h": "19:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:15 PM",
+            "time_24h": "20:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:45 PM",
+            "time_24h": "20:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:15 PM",
+            "time_24h": "21:15",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:45 PM",
+            "time_24h": "21:45",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ]
+      }
+    },
+    "aqualink": {
+      "name": "Aqualink",
+      "days": {
+        "2026-01-28": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-01-29": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          }
+        ],
+        "2026-01-30": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-01-31": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "3 / 6 AVAILABLE",
+            "available": 3,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-02-01": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-02-02": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-02-03": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "availability_text": "6 / 6 AVAILABLE",
+            "available": 6,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "availability_text": "5 / 6 AVAILABLE",
+            "available": 5,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "availability_text": "4 / 6 AVAILABLE",
+            "available": 4,
+            "max_slots": 6
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "availability_text": "NOT AVAILABLE",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "availability_text": "2 / 6 AVAILABLE",
+            "available": 2,
+            "max_slots": 6
+          }
         ]
       }
     }
   },
-  "last_updated": "2026-01-27T14:20:53.033743"
+  "last_updated": "2026-01-28T13:43:22.428956"
 }
