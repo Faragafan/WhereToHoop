@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
+import pytz
 
 # Define venues to scrape
 VENUES = {
@@ -42,6 +43,9 @@ DATA_FILE = Path(DATA_DIR) / "availability.json"
 
 # Cloud-friendly concurrency (default 3 for Render free tier - balances speed and memory)
 DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '3'))
+
+# Melbourne timezone
+MELBOURNE_TZ = pytz.timezone('Australia/Melbourne')
 
 
 def parse_availability(text):
@@ -85,7 +89,7 @@ def split_into_days(slots, start_date=None):
     A new day starts when the time resets (current time <= previous time).
     """
     if start_date is None:
-        start_date = datetime.now().date()
+        start_date = datetime.now(MELBOURNE_TZ).date()
     
     days = {}
     current_day_slots = []
@@ -267,7 +271,7 @@ def save_data(all_venue_data):
     
     data = {
         "venues": all_venue_data,
-        "last_updated": datetime.now().isoformat()
+        "last_updated": datetime.now(MELBOURNE_TZ).isoformat()
     }
     
     with open(DATA_FILE, 'w') as f:
