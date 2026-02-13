@@ -4430,8 +4430,8 @@
           {
             "time_slot": "7:00 PM",
             "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
+            "available": 1,
+            "max_slots": 6
           },
           {
             "time_slot": "8:00 PM",
@@ -7310,5 +7310,5 @@
       }
     }
   },
-  "last_updated": "2026-02-14T00:58:36.279186+11:00"
+  "last_updated": "2026-02-14T01:34:07.275332+11:00"
 }
