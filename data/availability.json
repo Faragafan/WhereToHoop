@@ -1283,25 +1283,25 @@
           {
             "time_slot": "8:00 PM",
             "time_24h": "20:00",
-            "available": 5,
+            "available": 4,
             "max_slots": 8
           },
           {
             "time_slot": "8:30 PM",
             "time_24h": "20:30",
-            "available": 6,
+            "available": 5,
             "max_slots": 8
           },
           {
             "time_slot": "9:00 PM",
             "time_24h": "21:00",
-            "available": 8,
+            "available": 7,
             "max_slots": 8
           },
           {
             "time_slot": "9:30 PM",
             "time_24h": "21:30",
-            "available": 8,
+            "available": 7,
             "max_slots": 8
           },
           {
@@ -7274,5 +7274,5 @@
       }
     }
   },
-  "last_updated": "2026-03-08T00:35:15.822479+11:00"
+  "last_updated": "2026-03-08T01:13:53.794169+11:00"
 }
