@@ -3013,13 +3013,13 @@
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
+            "available": 2,
             "max_slots": 6
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "available": 1,
+            "available": 2,
             "max_slots": 6
           },
           {
@@ -7298,5 +7298,5 @@
       }
     }
   },
-  "last_updated": "2026-03-30T00:49:09.873981+11:00"
+  "last_updated": "2026-03-30T01:24:03.709368+11:00"
 }
