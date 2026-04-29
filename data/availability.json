@@ -948,14 +948,14 @@
           {
             "time_slot": "9:00 PM",
             "time_24h": "21:00",
-            "available": 1,
-            "max_slots": 4
+            "available": 0,
+            "max_slots": 5
           },
           {
             "time_slot": "10:00 PM",
             "time_24h": "22:00",
-            "available": 1,
-            "max_slots": 4
+            "available": 0,
+            "max_slots": 5
           }
         ],
         "2026-05-05": [
@@ -7874,5 +7874,5 @@
       }
     }
   },
-  "last_updated": "2026-04-30T01:06:56.696380+10:00"
+  "last_updated": "2026-04-30T01:50:57.317066+10:00"
 }
