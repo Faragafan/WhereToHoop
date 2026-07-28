@@ -20,6 +20,7 @@ Tired of showing up to the courts only to find them fully booked? **Where to Hoo
 | Narrandjeri Stadium | Thornbury |
 | Macleod Recreation & Fitness Centre| Macleod |
 | Sportslink | Vermont South |
+| Diamond Valley Sports and Fitness | Greensborough |
 
 ## Features
 

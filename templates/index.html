@@ -3,343 +3,576 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏀 Where to Hoop Bro</title>
+    <title>Where to Hoop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         :root {
-            --available-high: #28a745;
-            --available-medium: #ffc107;
-            --available-low: #fd7e14;
-            --available-none: #dc3545;
+            --page-bg: #f6f7f4;
+            --surface: #ffffff;
+            --surface-muted: #f0f3ef;
+            --border: #dfe4dc;
+            --text: #1e241f;
+            --muted: #6b746b;
+            --available-high: #1f8f4d;
+            --available-medium: #d99a18;
+            --available-low: #d8662f;
+            --available-none: #c74747;
+            --accent: #2b6f6d;
+            --accent-soft: #dcecea;
+            --shadow: 0 8px 24px rgba(31, 36, 32, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             min-height: 100vh;
-            color: #fff;
+            margin: 0;
+            background: var(--page-bg);
+            color: var(--text);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
 
-        .navbar {
-            background: rgba(0, 0, 0, 0.3) !important;
-            backdrop-filter: blur(10px);
+        .app-shell {
+            width: min(1440px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 24px 0 40px;
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-        }
-
-        .card-header {
-            background: rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .current-time {
-            font-size: 2.5em;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
             margin-bottom: 20px;
         }
 
-        .current-time .date {
-            font-size: 0.4em;
-            opacity: 0.8;
+        .brand-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .brand-mark {
+            display: grid;
+            place-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            background: var(--text);
+            color: white;
+            flex: 0 0 auto;
+        }
+
+        .brand-title {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 750;
+            letter-spacing: 0;
+        }
+
+        .brand-subtitle {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .updated-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 36px;
+            padding: 0 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            color: var(--muted);
+            font-size: 0.88rem;
+            white-space: nowrap;
+        }
+
+        .status-strip {
+            display: grid;
+            grid-template-columns: minmax(220px, 0.9fr) repeat(2, minmax(240px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .panel {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .time-panel {
+            padding: 18px;
+        }
+
+        .current-time {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.75rem;
+            font-weight: 780;
+            line-height: 1.1;
+        }
+
+        .current-date {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .live-indicator {
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            background: var(--available-high);
+            box-shadow: 0 0 0 5px rgba(31, 143, 77, 0.12);
+            flex: 0 0 auto;
         }
 
         .stats-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.2s;
-            height: 100%;
-        }
-
-        .stats-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 14px;
+            min-height: 136px;
+            padding: 18px;
         }
 
         .stats-number {
-            font-size: 2.5em;
-            font-weight: bold;
+            min-width: 56px;
+            color: var(--accent);
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
         }
 
         .stats-label {
-            font-size: 0.9em;
-            opacity: 0.9;
+            margin-bottom: 8px;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-weight: 700;
         }
 
         .venue-list {
-            font-size: 0.85em;
-            margin-top: 10px;
-            text-align: left;
-            max-height: 150px;
-            overflow-y: auto;
+            display: grid;
+            gap: 6px;
+            font-size: 0.86rem;
         }
 
         .venue-list-item {
-            padding: 5px 10px;
-            margin: 3px 0;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
             align-items: center;
+            gap: 8px;
+            padding: 7px 8px;
+            border-radius: 6px;
+            background: var(--surface-muted);
         }
 
-        .availability-badge {
-            display: inline-block;
-            padding: 0.3em 0.6em;
-            border-radius: 15px;
-            font-weight: bold;
-            font-size: 0.85em;
-            min-width: 50px;
-            text-align: center;
+        .venue-list-item span:first-child {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
-        .availability-high { background: var(--available-high); color: white; }
-        .availability-medium { background: var(--available-medium); color: #000; }
-        .availability-low { background: var(--available-low); color: white; }
-        .availability-none { background: var(--available-none); color: white; }
+        .venue-list-more {
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .controls-panel {
+            display: grid;
+            grid-template-columns: minmax(220px, 320px) 1fr auto;
+            align-items: end;
+            gap: 18px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 7px;
+            color: var(--muted);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
 
         .date-selector {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #fff;
-            border-radius: 10px;
-            padding: 10px 20px;
-            font-size: 1.1em;
+            min-height: 42px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            background-color: var(--surface);
+            font-size: 0.95rem;
         }
 
-        .date-selector option {
-            background: #1a1a2e;
+        .filter-group {
+            display: inline-flex;
+            gap: 4px;
+            padding: 4px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface-muted);
         }
 
         .filter-btn {
-            border-radius: 20px;
-            padding: 0.5em 1.2em;
-            margin: 0.2em;
-            transition: all 0.2s;
+            min-height: 34px;
+            border: 0;
+            border-radius: 6px;
+            padding: 0 12px;
+            color: var(--muted);
+            background: transparent;
+            font-size: 0.9rem;
+            font-weight: 700;
         }
 
         .filter-btn.active {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .venues-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .venue-card {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-
-        .venue-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.12);
-        }
-
-        .venue-card-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        .venue-card-body {
-            padding: 15px;
-            max-height: 400px;
-            overflow-y: auto;
-        }
-
-        .time-slot {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 12px;
-            margin: 5px 0;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            transition: all 0.2s;
-        }
-
-        .time-slot:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .time-slot.current-slot {
-            border: 2px solid #667eea;
-            background: rgba(102, 126, 234, 0.2);
-        }
-
-        .time-slot-time {
-            font-weight: 500;
+            color: var(--text);
+            background: var(--surface);
+            box-shadow: 0 2px 8px rgba(31, 36, 32, 0.08);
         }
 
         .legend {
             display: flex;
-            gap: 20px;
-            justify-content: center;
+            justify-content: flex-end;
+            gap: 12px;
             flex-wrap: wrap;
-            padding: 15px;
+            color: var(--muted);
+            font-size: 0.82rem;
         }
 
         .legend-item {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
         }
 
-        .refresh-btn {
-            transition: all 0.3s;
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 16px;
+            margin: 8px 0 10px;
         }
 
-        .refresh-btn:hover {
-            transform: rotate(180deg);
+        .section-heading h2 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .section-heading small {
+            color: var(--muted);
+        }
+
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 12px;
+        }
+
+        .venue-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 360px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .venue-card-header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: start;
+            gap: 12px;
+            padding: 14px 14px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .venue-name {
+            min-width: 0;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .venue-meta {
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .availability-summary {
+            padding: 5px 8px;
+            border-radius: 6px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .venue-card-body {
+            display: grid;
+            gap: 6px;
+            max-height: 390px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .time-slot {
+            display: grid;
+            grid-template-columns: minmax(86px, auto) 1fr auto;
+            align-items: center;
+            gap: 10px;
+            min-height: 38px;
+            padding: 7px 8px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+
+        .time-slot.current-slot {
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .time-slot-time {
+            font-weight: 760;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .slot-track {
+            height: 6px;
+            overflow: hidden;
+            border-radius: 999px;
+            background: #d8ded5;
+        }
+
+        .slot-fill {
+            height: 100%;
+            border-radius: inherit;
+            background: var(--available-none);
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 58px;
+            min-height: 26px;
+            border-radius: 6px;
+            padding: 0 8px;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 800;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .availability-high { background: var(--available-high); }
+        .availability-medium { background: var(--available-medium); color: #231b08; }
+        .availability-low { background: var(--available-low); }
+        .availability-none { background: var(--available-none); }
+
+        .no-data {
+            grid-column: 1 / -1;
+            padding: 44px 16px;
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        .muted-empty {
+            padding: 28px 8px;
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .page-footer {
+            padding: 22px 0 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.82rem;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(6px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         .animate-in {
-            animation: fadeIn 0.3s ease-out;
+            animation: fadeIn 0.18s ease-out;
         }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+        @media (max-width: 980px) {
+            .status-strip {
+                grid-template-columns: 1fr;
+            }
+
+            .controls-panel {
+                grid-template-columns: 1fr;
+                align-items: stretch;
+            }
+
+            .legend {
+                justify-content: flex-start;
+            }
         }
 
-        .live-indicator {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #28a745;
-            border-radius: 50%;
-            margin-right: 8px;
-            animation: pulse 2s infinite;
-        }
+        @media (max-width: 560px) {
+            .app-shell {
+                width: min(100% - 20px, 1440px);
+                padding-top: 14px;
+            }
 
-        .no-data {
-            text-align: center;
-            padding: 40px;
-            opacity: 0.7;
+            .top-bar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .updated-pill {
+                width: 100%;
+                white-space: normal;
+            }
+
+            .stats-card {
+                grid-template-columns: 1fr;
+                min-height: 0;
+            }
+
+            .filter-group {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .venues-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .venue-card {
+                min-height: 0;
+            }
+
+            .time-slot {
+                grid-template-columns: minmax(72px, auto) 1fr auto;
+                gap: 8px;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-dribbble"></i> Where to Hoop Bro
-            </a>
-            <div class="d-flex align-items-center gap-3">
-                <span class="last-updated" id="lastUpdated"></span>
-                <small class="text-light opacity-75">
-                    <i class="bi bi-clock-history"></i> Auto-refreshes daily at midnight
-                </small>
+    <main class="app-shell">
+        <header class="top-bar">
+            <div class="brand-block">
+                <div class="brand-mark" aria-hidden="true">
+                    <i class="bi bi-dribbble"></i>
+                </div>
+                <div>
+                    <h1 class="brand-title">Where to Hoop</h1>
+                    <div class="brand-subtitle">Melbourne court availability</div>
+                </div>
             </div>
-        </div>
-    </nav>
+            <div class="updated-pill">
+                <i class="bi bi-clock-history"></i>
+                <span id="lastUpdated">Loading availability...</span>
+            </div>
+        </header>
 
-    <div class="container">
-        <!-- Current Time Display -->
-        <div class="current-time">
-            <span class="live-indicator"></span>
-            <span id="currentTime">--:--:--</span>
-            <div class="date" id="currentDateDisplay">Loading...</div>
-        </div>
+        <section class="status-strip" aria-label="Current availability">
+            <div class="panel time-panel">
+                <div class="current-time">
+                    <span class="live-indicator" aria-hidden="true"></span>
+                    <span id="currentTime">--:--:--</span>
+                </div>
+                <div class="current-date" id="currentDateDisplay">Loading...</div>
+            </div>
 
-        <!-- Real-time Stats Row -->
-        <div class="row mb-4">
-            <div class="col-md-6 mb-3">
-                <div class="stats-card">
-                    <div class="stats-number text-success" id="statNowAvailable">-</div>
-                    <div class="stats-label">Venues Available Right Now</div>
+            <div class="panel stats-card">
+                <div class="stats-number" id="statNowAvailable">-</div>
+                <div>
+                    <div class="stats-label">Available right now</div>
                     <div class="venue-list" id="venuesNowList"></div>
                 </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <div class="stats-card">
-                    <div class="stats-number text-info" id="statNext2Hours">-</div>
-                    <div class="stats-label">Venues Available in Next 2 Hours</div>
+
+            <div class="panel stats-card">
+                <div class="stats-number" id="statNext2Hours">-</div>
+                <div>
+                    <div class="stats-label">Available in next 2 hours</div>
                     <div class="venue-list" id="venuesNext2HoursList"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Date Selector and Filter -->
-        <div class="card mb-4">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="form-label text-white"><i class="bi bi-calendar3"></i> Select Date:</label>
-                        <select class="form-select date-selector" id="dateSelector" onchange="changeDate()">
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label text-white"><i class="bi bi-funnel"></i> Filter:</label>
-                        <div>
-                            <button class="btn btn-outline-light filter-btn active" data-filter="all" onclick="setFilter('all')">All Slots</button>
-                            <button class="btn btn-outline-success filter-btn" data-filter="available" onclick="setFilter('available')">Available Only</button>
-                            <button class="btn btn-outline-warning filter-btn" data-filter="good" onclick="setFilter('good')">≥3 Available</button>
-                        </div>
-                    </div>
+        <section class="panel controls-panel" aria-label="Filters">
+            <div>
+                <label class="control-label" for="dateSelector">Date</label>
+                <select class="form-select date-selector" id="dateSelector" onchange="changeDate()"></select>
+            </div>
+
+            <div>
+                <span class="control-label">Filter</span>
+                <div class="filter-group" role="group" aria-label="Availability filter">
+                    <button class="filter-btn active" data-filter="all" onclick="setFilter('all')" type="button" aria-pressed="true">All slots</button>
+                    <button class="filter-btn" data-filter="available" onclick="setFilter('available')" type="button" aria-pressed="false">Available</button>
+                    <button class="filter-btn" data-filter="good" onclick="setFilter('good')" type="button" aria-pressed="false">3+ courts</button>
                 </div>
             </div>
+
+            <div class="legend" aria-label="Legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--available-high);"></span>
+                    <span>Good</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--available-medium);"></span>
+                    <span>Limited</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--available-low);"></span>
+                    <span>Low</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background: var(--available-none);"></span>
+                    <span>Full</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-heading">
+            <h2>Venues</h2>
+            <small id="venueCount">Loading venues...</small>
         </div>
 
-        <!-- Legend -->
-        <div class="legend mb-4">
-            <div class="legend-item">
-                <div class="legend-color" style="background: var(--available-high);"></div>
-                <span>Good (≥3)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: var(--available-medium);"></div>
-                <span>Limited (2)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: var(--available-low);"></div>
-                <span>Low (1)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: var(--available-none);"></div>
-                <span>Unavailable</span>
-            </div>
-        </div>
+        <section class="venues-grid" id="venuesGrid" aria-live="polite"></section>
 
-        <!-- All Venues Grid -->
-        <div class="venues-grid" id="venuesGrid">
-            <!-- Venue cards will be rendered here -->
-        </div>
-    </div>
-
-    <footer class="text-center py-4 mt-4">
-        <small class="text-light">🏀 Get to work lil bro</small>
-    </footer>
+        <footer class="page-footer">
+            Data refreshes from the saved scraper output.
+        </footer>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -347,22 +580,21 @@
         let currentDate = null;
         let currentFilter = 'all';
 
-        // Update clock every second
         function updateClock() {
             const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-AU', { 
+            const timeStr = now.toLocaleTimeString('en-AU', {
                 timeZone: 'Australia/Melbourne',
-                hour: '2-digit', 
-                minute: '2-digit', 
+                hour: '2-digit',
+                minute: '2-digit',
                 second: '2-digit',
-                hour12: true 
+                hour12: true
             });
-            const dateStr = now.toLocaleDateString('en-AU', { 
+            const dateStr = now.toLocaleDateString('en-AU', {
                 timeZone: 'Australia/Melbourne',
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
             });
             document.getElementById('currentTime').textContent = timeStr;
             document.getElementById('currentDateDisplay').textContent = dateStr;
@@ -371,124 +603,108 @@
         setInterval(updateClock, 1000);
         updateClock();
 
-        // Auto-reload data every 2 minutes to stay fresh with GitHub Actions updates
         setInterval(() => {
-            console.log('Auto-reloading data...');
             loadData();
-        }, 120000); // 2 minutes
+        }, 120000);
 
-        // Convert time string to minutes since midnight
         function timeToMinutes(time24h) {
             const [hours, minutes] = time24h.split(':').map(Number);
             return hours * 60 + minutes;
         }
 
-        // Get current time in minutes since midnight
         function getCurrentMinutes() {
             const now = new Date();
             return now.getHours() * 60 + now.getMinutes();
         }
 
-        // Calculate the interval (in minutes) for a venue's slots
         function getSlotInterval(slots) {
-            if (slots.length < 2) return 60; // Default to 1 hour if can't calculate
-            
-            // Calculate interval from first two slots
+            if (slots.length < 2) return 60;
             const time1 = timeToMinutes(slots[0].time_24h);
             const time2 = timeToMinutes(slots[1].time_24h);
-            return time2 - time1;
+            return Math.max(time2 - time1, 15);
         }
 
-        // Check if a time slot is currently active
-        function isCurrentSlot(time24h, slots, slotIndex) {
+        function isCurrentSlot(time24h, slots) {
             const now = getCurrentMinutes();
             const slotStart = timeToMinutes(time24h);
-            const interval = getSlotInterval(slots);
-            
-            // For the last slot, it only lasts for the interval duration
-            const slotEnd = slotStart + interval;
-            
+            const slotEnd = slotStart + getSlotInterval(slots);
             return now >= slotStart && now < slotEnd;
         }
 
-        // Check if a time slot is within the next N hours from now
         function isWithinNextHours(time24h, hours, slots) {
             const now = getCurrentMinutes();
             const slotStart = timeToMinutes(time24h);
-            const interval = getSlotInterval(slots);
-            const slotEnd = slotStart + interval;
+            const slotEnd = slotStart + getSlotInterval(slots);
             const futureLimit = now + (hours * 60);
-            
-            // Slot is within range if it hasn't ended yet and starts before the future limit
             return slotEnd > now && slotStart < futureLimit;
         }
 
-        // Load data from API
         async function loadData() {
             try {
                 const response = await fetch('/api/data');
                 allData = await response.json();
-                
+
                 populateDateSelector();
-                
+
                 if (allData.last_updated) {
                     const lastUpdatedDate = new Date(allData.last_updated);
-                    document.getElementById('lastUpdated').textContent = 
-                        `Last updated: ${lastUpdatedDate.toLocaleString('en-AU', { 
+                    document.getElementById('lastUpdated').textContent =
+                        `Updated ${lastUpdatedDate.toLocaleString('en-AU', {
                             timeZone: 'Australia/Melbourne',
-                            dateStyle: 'short',
+                            dateStyle: 'medium',
                             timeStyle: 'short'
                         })}`;
                 }
-                
+
                 renderAll();
             } catch (error) {
-                console.error('Error loading data:', error);
                 document.getElementById('venuesGrid').innerHTML = `
                     <div class="no-data">
                         <i class="bi bi-exclamation-triangle"></i> Error loading data. Run the scraper first.
                     </div>
                 `;
+                document.getElementById('venueCount').textContent = 'No data loaded';
             }
         }
 
         function populateDateSelector() {
             const dateSelector = document.getElementById('dateSelector');
+            const previousDate = currentDate;
             dateSelector.innerHTML = '';
-            
-            // Collect all unique dates across all venues
+
             const allDates = new Set();
             Object.values(allData.venues || {}).forEach(venue => {
                 Object.keys(venue.days || {}).forEach(date => allDates.add(date));
             });
-            
+
             const dates = Array.from(allDates).sort();
             const today = new Date().toISOString().split('T')[0];
-            
+
             dates.forEach(date => {
                 const option = document.createElement('option');
                 option.value = date;
-                option.textContent = formatDate(date) + (date === today ? ' (Today)' : '');
+                option.textContent = formatDate(date) + (date === today ? ' (today)' : '');
                 dateSelector.appendChild(option);
             });
-            
-            // Default to today if available
-            if (dates.includes(today)) {
+
+            if (previousDate && dates.includes(previousDate)) {
+                currentDate = previousDate;
+            } else if (dates.includes(today)) {
                 currentDate = today;
-            } else if (dates.length > 0) {
-                currentDate = dates[0];
+            } else {
+                currentDate = dates[0] || null;
             }
-            
+
             if (currentDate) {
                 dateSelector.value = currentDate;
             }
         }
 
         function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            return date.toLocaleDateString('en-US', { 
-                weekday: 'short', 
-                month: 'short', 
+            const date = new Date(`${dateStr}T12:00:00`);
+            return date.toLocaleDateString('en-AU', {
+                weekday: 'short',
+                month: 'short',
                 day: 'numeric'
             });
         }
@@ -501,7 +717,9 @@
         function setFilter(filter) {
             currentFilter = filter;
             document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.filter === filter);
+                const isActive = btn.dataset.filter === filter;
+                btn.classList.toggle('active', isActive);
+                btn.setAttribute('aria-pressed', String(isActive));
             });
             renderAll();
         }
@@ -509,9 +727,9 @@
         function filterSlots(slots) {
             switch (currentFilter) {
                 case 'available':
-                    return slots.filter(s => s.available > 0);
+                    return slots.filter(slot => slot.available > 0);
                 case 'good':
-                    return slots.filter(s => s.available >= 3);
+                    return slots.filter(slot => slot.available >= 3);
                 default:
                     return slots;
             }
@@ -525,30 +743,31 @@
         }
 
         function getAvailabilityText(available, max) {
-            if (available === 0) return 'Unavailable';
+            if (available === 0) return 'Full';
             return `${available}/${max}`;
+        }
+
+        function getAvailabilityPercent(slot) {
+            if (!slot.max_slots) return 0;
+            return Math.max(0, Math.min(100, Math.round((slot.available / slot.max_slots) * 100)));
+        }
+
+        function getBestSlot(slots) {
+            if (!slots.length) return null;
+            return slots.reduce((best, slot) => slot.available > best.available ? slot : best, slots[0]);
         }
 
         function updateRealTimeStats() {
             const today = new Date().toISOString().split('T')[0];
             const venues = allData.venues || {};
-            const now = getCurrentMinutes();
-            
-            console.log(`[DEBUG] Today: ${today}, Current time: ${Math.floor(now/60)}:${now%60}`);
-            
-            let venuesNow = [];
-            let venuesNext2Hours = [];
-            
-            Object.entries(venues).forEach(([venueId, venue]) => {
+            const venuesNow = [];
+            const venuesNext2Hours = [];
+
+            Object.values(venues).forEach(venue => {
                 const slots = venue.days?.[today] || [];
-                const interval = getSlotInterval(slots);
-                
-                console.log(`[DEBUG] ${venue.name}: ${slots.length} slots, interval: ${interval} min`);
-                
-                // Check for current slot (pass slots array for interval calculation)
-                const currentSlot = slots.find((s, idx) => isCurrentSlot(s.time_24h, slots, idx) && s.available > 0);
+                const currentSlot = slots.find(slot => isCurrentSlot(slot.time_24h, slots) && slot.available > 0);
+
                 if (currentSlot) {
-                    console.log(`[DEBUG] ${venue.name} has current slot: ${currentSlot.time_slot}`);
                     venuesNow.push({
                         name: venue.name,
                         available: currentSlot.available,
@@ -556,12 +775,10 @@
                         time: currentSlot.time_slot
                     });
                 }
-                
-                // Check for slots in next 2 hours (pass slots array for interval calculation)
-                const next2HourSlots = slots.filter(s => isWithinNextHours(s.time_24h, 2, slots) && s.available > 0);
-                console.log(`[DEBUG] ${venue.name} next 2h slots:`, next2HourSlots.map(s => `${s.time_slot}(${s.available})`));
+
+                const next2HourSlots = slots.filter(slot => isWithinNextHours(slot.time_24h, 2, slots) && slot.available > 0);
                 if (next2HourSlots.length > 0) {
-                    const bestSlot = next2HourSlots.reduce((a, b) => a.available > b.available ? a : b);
+                    const bestSlot = getBestSlot(next2HourSlots);
                     venuesNext2Hours.push({
                         name: venue.name,
                         available: bestSlot.available,
@@ -571,63 +788,65 @@
                     });
                 }
             });
-            
-            // Update "Now" stats
+
             document.getElementById('statNowAvailable').textContent = venuesNow.length;
-            const nowList = document.getElementById('venuesNowList');
-            if (venuesNow.length > 0) {
-                nowList.innerHTML = venuesNow.map(v => `
-                    <div class="venue-list-item">
-                        <span><i class="bi bi-geo-alt"></i> ${v.name}</span>
-                        <span class="availability-badge ${getAvailabilityClass(v.available)}">${v.available}/${v.max}</span>
-                    </div>
-                `).join('');
-            } else {
-                nowList.innerHTML = '<div class="text-light text-center py-2">No venues available right now</div>';
-            }
-            
-            // Update "Next 2 Hours" stats
+            renderCompactVenueList('venuesNowList', venuesNow, 'No venues available right now');
+
             document.getElementById('statNext2Hours').textContent = venuesNext2Hours.length;
-            const next2List = document.getElementById('venuesNext2HoursList');
-            if (venuesNext2Hours.length > 0) {
-                next2List.innerHTML = venuesNext2Hours.map(v => `
-                    <div class="venue-list-item">
-                        <span><i class="bi bi-geo-alt"></i> ${v.name} <small class="text-light opacity-75">(${v.slotsCount} slots)</small></span>
-                        <span class="availability-badge ${getAvailabilityClass(v.available)}">${v.available}/${v.max}</span>
-                    </div>
-                `).join('');
-            } else {
-                next2List.innerHTML = '<div class="text-light text-center py-2">No venues available in next 2 hours</div>';
+            renderCompactVenueList('venuesNext2HoursList', venuesNext2Hours, 'No venues available in next 2 hours');
+        }
+
+        function renderCompactVenueList(elementId, venues, emptyText) {
+            const list = document.getElementById(elementId);
+            if (venues.length === 0) {
+                list.innerHTML = `<div class="muted-empty">${emptyText}</div>`;
+                return;
             }
+
+            const visibleVenues = venues.slice(0, 4);
+            const hiddenCount = venues.length - visibleVenues.length;
+
+            list.innerHTML = visibleVenues.map(venue => `
+                <div class="venue-list-item">
+                    <span>${venue.name}</span>
+                    <span class="availability-badge ${getAvailabilityClass(venue.available)}">${venue.available}/${venue.max}</span>
+                </div>
+            `).join('') + (hiddenCount > 0 ? `<div class="venue-list-more">+${hiddenCount} more venues</div>` : '');
         }
 
         function renderVenuesGrid() {
             const grid = document.getElementById('venuesGrid');
             const venues = allData.venues || {};
-            
-            if (Object.keys(venues).length === 0) {
+            const venueEntries = Object.entries(venues);
+
+            document.getElementById('venueCount').textContent = `${venueEntries.length} venues`;
+
+            if (venueEntries.length === 0) {
                 grid.innerHTML = '<div class="no-data">No venue data available. Run the scraper first.</div>';
                 return;
             }
-            
+
             grid.innerHTML = '';
-            
-            Object.entries(venues).forEach(([venueId, venue]) => {
+
+            venueEntries.forEach(([venueId, venue]) => {
                 const slots = venue.days?.[currentDate] || [];
                 const filteredSlots = filterSlots(slots);
-                
-                const card = document.createElement('div');
+                const availableCount = slots.filter(slot => slot.available > 0).length;
+                const totalCount = slots.length;
+                const bestSlot = getBestSlot(slots);
+
+                const card = document.createElement('article');
                 card.className = 'venue-card animate-in';
-                
-                const slotsHtml = filteredSlots.length > 0 
-                    ? filteredSlots.map((slot, idx) => {
-                        // Pass full slots array for interval calculation
-                        const isCurrent = isCurrentSlot(slot.time_24h, slots, slots.indexOf(slot));
+
+                const slotsHtml = filteredSlots.length > 0
+                    ? filteredSlots.map(slot => {
+                        const isCurrent = isCurrentSlot(slot.time_24h, slots);
+                        const fillWidth = getAvailabilityPercent(slot);
                         return `
                             <div class="time-slot ${isCurrent ? 'current-slot' : ''}">
-                                <span class="time-slot-time">
-                                    ${isCurrent ? '<i class="bi bi-clock-fill text-warning"></i> ' : ''}
-                                    ${slot.time_slot}
+                                <span class="time-slot-time">${slot.time_slot}</span>
+                                <span class="slot-track" aria-hidden="true">
+                                    <span class="slot-fill ${getAvailabilityClass(slot.available)}" style="width: ${fillWidth}%;"></span>
                                 </span>
                                 <span class="availability-badge ${getAvailabilityClass(slot.available)}">
                                     ${getAvailabilityText(slot.available, slot.max_slots)}
@@ -635,21 +854,23 @@
                             </div>
                         `;
                     }).join('')
-                    : '<div class="text-muted text-center py-3">No slots match filter</div>';
-                
-                const availableCount = slots.filter(s => s.available > 0).length;
-                const totalCount = slots.length;
-                
+                    : '<div class="muted-empty">No slots match this filter</div>';
+
                 card.innerHTML = `
-                    <div class="venue-card-header">
-                        <i class="bi bi-geo-alt"></i> ${venue.name}
-                        <small class="float-end">${availableCount}/${totalCount} available</small>
-                    </div>
+                    <header class="venue-card-header">
+                        <div>
+                            <h3 class="venue-name">${venue.name}</h3>
+                            <div class="venue-meta">
+                                ${totalCount} slots${bestSlot ? ` · best ${bestSlot.available}/${bestSlot.max_slots} at ${bestSlot.time_slot}` : ''}
+                            </div>
+                        </div>
+                        <div class="availability-summary">${availableCount}/${totalCount}</div>
+                    </header>
                     <div class="venue-card-body">
                         ${slotsHtml}
                     </div>
                 `;
-                
+
                 grid.appendChild(card);
             });
         }
@@ -659,10 +880,7 @@
             renderVenuesGrid();
         }
 
-        // Update real-time stats every minute
         setInterval(updateRealTimeStats, 60000);
-
-        // Initialize
         document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>

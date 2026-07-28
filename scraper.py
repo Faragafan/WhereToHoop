@@ -39,6 +39,10 @@ VENUES = {
         "name": "La Trobe Sports Park",
         "url": "https://sportonline.latrobe.edu.au/ResourceAvailability/17",
         "type": "latrobe"  # Different scraping method
+    },
+    "diamondvalley": {
+        "name": "Diamond Valley Sports and Fitness",
+        "url": "https://nillumbiklf.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/55cf81997"
     }
 }
 
