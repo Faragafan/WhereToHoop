@@ -21,6 +21,8 @@ Tired of showing up to the courts only to find them fully booked? **Where to Hoo
 | Macleod Recreation & Fitness Centre| Macleod |
 | Sportslink | Vermont South |
 | Diamond Valley Sports and Fitness | Greensborough |
+| Darebin Community Sports Stadium (DCSS) | Reservoir |
+| State Sport Centres | Albert Park / Wantirna South |
 
 ## Features
 

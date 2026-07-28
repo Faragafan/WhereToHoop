@@ -579,6 +579,21 @@
         let allData = {};
         let currentDate = null;
         let currentFilter = 'all';
+        const venueDisplayOrder = ['boroondara', 'darebin', 'diamondvalley', 'dcss'];
+
+        function getSortedVenueEntries(venues) {
+            const orderMap = new Map(venueDisplayOrder.map((id, index) => [id, index]));
+            return Object.entries(venues).sort(([idA, venueA], [idB, venueB]) => {
+                const orderA = orderMap.has(idA) ? orderMap.get(idA) : Number.MAX_SAFE_INTEGER;
+                const orderB = orderMap.has(idB) ? orderMap.get(idB) : Number.MAX_SAFE_INTEGER;
+
+                if (orderA !== orderB) {
+                    return orderA - orderB;
+                }
+
+                return (venueA.name || idA).localeCompare(venueB.name || idB);
+            });
+        }
 
         function updateClock() {
             const now = new Date();
@@ -763,7 +778,7 @@
             const venuesNow = [];
             const venuesNext2Hours = [];
 
-            Object.values(venues).forEach(venue => {
+            getSortedVenueEntries(venues).forEach(([_venueId, venue]) => {
                 const slots = venue.days?.[today] || [];
                 const currentSlot = slots.find(slot => isCurrentSlot(slot.time_24h, slots) && slot.available > 0);
 
@@ -817,7 +832,7 @@
         function renderVenuesGrid() {
             const grid = document.getElementById('venuesGrid');
             const venues = allData.venues || {};
-            const venueEntries = Object.entries(venues);
+            const venueEntries = getSortedVenueEntries(venues);
 
             document.getElementById('venueCount').textContent = `${venueEntries.length} venues`;
 
@@ -861,7 +876,7 @@
                         <div>
                             <h3 class="venue-name">${venue.name}</h3>
                             <div class="venue-meta">
-                                ${totalCount} slots${bestSlot ? ` · best ${bestSlot.available}/${bestSlot.max_slots} at ${bestSlot.time_slot}` : ''}
+                                ${totalCount} slots${bestSlot ? ` - best ${bestSlot.available}/${bestSlot.max_slots} at ${bestSlot.time_slot}` : ''}
                             </div>
                         </div>
                         <div class="availability-summary">${availableCount}/${totalCount}</div>

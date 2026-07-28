@@ -43,6 +43,15 @@ VENUES = {
     "diamondvalley": {
         "name": "Diamond Valley Sports and Fitness",
         "url": "https://nillumbiklf.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/55cf81997"
+    },
+    "dcss": {
+        "name": "DCSS",
+        "url": "https://darebin.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/3a5501333"
+    },
+    "statesports": {
+        "name": "State Sport Centres",
+        "url": "https://statesportcentres.com.au/sports/basketball/",
+        "type": "state_sports"
     }
 }
 
@@ -125,6 +134,124 @@ def split_into_days(slots, start_date=None):
         days[date_str] = current_day_slots
     
     return days
+
+
+def minutes_to_time_slot(minutes):
+    """Convert minutes since midnight to display time like '6:30 AM'."""
+    dt = datetime(2000, 1, 1) + timedelta(minutes=minutes)
+    return dt.strftime("%I:%M %p").lstrip("0")
+
+
+def parse_state_sports_time_to_minutes(time_str):
+    """Parse State Sport Centres table times like '8:00am' into minutes."""
+    match = re.search(r'(\d{1,2}):(\d{2})\s*(am|pm)', time_str, re.IGNORECASE)
+    if not match:
+        return None
+
+    hour = int(match.group(1))
+    minute = int(match.group(2))
+    meridiem = match.group(3).lower()
+
+    if meridiem == "pm" and hour != 12:
+        hour += 12
+    elif meridiem == "am" and hour == 12:
+        hour = 0
+
+    return hour * 60 + minute
+
+
+def parse_state_sports_ranges(cell_text):
+    """Extract availability ranges from one State Sport Centres table cell."""
+    if not cell_text or "closed" in cell_text.lower():
+        return []
+
+    times = re.findall(r'\d{1,2}:\d{2}\s*(?:am|pm)', cell_text, flags=re.IGNORECASE)
+    ranges = []
+
+    for i in range(0, len(times) - 1, 2):
+        start = parse_state_sports_time_to_minutes(times[i])
+        end = parse_state_sports_time_to_minutes(times[i + 1])
+        if start is not None and end is not None and end > start:
+            ranges.append((start, end))
+
+    return ranges
+
+
+def scrape_state_sports_venue(page, url, venue_name, headless=False):
+    """Scrape State Sport Centres basketball availability table."""
+    page.goto(url, timeout=60000, wait_until="domcontentloaded")
+    page.wait_for_selector("figure.wp-block-table table", timeout=60000)
+
+    table_data = page.evaluate("""
+        () => {
+            const table = document.querySelector('figure.wp-block-table table');
+            if (!table) return { headers: [], rows: [] };
+
+            const headers = [...table.querySelectorAll('thead th')]
+                .slice(1)
+                .map(th => th.innerText.trim());
+
+            const rows = [...table.querySelectorAll('tbody tr')].map(row => {
+                const cells = [...row.querySelectorAll('td')];
+                return {
+                    court: cells[0]?.innerText.trim() || '',
+                    days: cells.slice(1).map(cell => cell.innerText.trim())
+                };
+            });
+
+            return { headers, rows };
+        }
+    """)
+
+    headers = table_data.get("headers", [])
+    rows = table_data.get("rows", [])
+    if not headers or not rows:
+        return {}
+
+    start_date = datetime.now(MELBOURNE_TZ).date()
+    days_data = {}
+
+    for day_index, _header in enumerate(headers):
+        date_str = (start_date + timedelta(days=day_index)).strftime("%Y-%m-%d")
+        day_ranges = []
+
+        for row in rows:
+            court_name = row.get("court", "")
+            if not court_name.lower().startswith("court"):
+                continue
+            day_cells = row.get("days", [])
+            if day_index >= len(day_cells):
+                continue
+
+            day_ranges.extend(parse_state_sports_ranges(day_cells[day_index]))
+
+        if not day_ranges:
+            days_data[date_str] = []
+            continue
+
+        slot_minutes = sorted({
+            minute
+            for start, end in day_ranges
+            for minute in range(start, end, 30)
+        })
+
+        slots = []
+        for minute in slot_minutes:
+            available = sum(1 for start, end in day_ranges if start <= minute < end)
+            if available <= 0:
+                continue
+
+            time_slot = minutes_to_time_slot(minute)
+            slots.append({
+                "time_slot": time_slot,
+                "time_24h": parse_time_slot(time_slot),
+                "available": available,
+                "max_slots": 4
+            })
+
+        days_data[date_str] = slots
+
+    return days_data
 
 
 def scrape_venue(page, url, venue_name, headless=False):
@@ -341,6 +468,8 @@ def scrape_venue_standalone(venue_id, venue_info, headless=True):
             
             if venue_type == "latrobe":
                 days_data = scrape_latrobe_venue(page, venue_info["url"], venue_info["name"], headless)
+            elif venue_type == "state_sports":
+                days_data = scrape_state_sports_venue(page, venue_info["url"], venue_info["name"], headless)
             else:
                 days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
             
@@ -414,7 +543,15 @@ def scrape_calendar(headless=False, venues=None):
 
         for venue_id, venue_info in venues.items():
             try:
-                days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
+                venue_type = venue_info.get("type", "perfectgym")
+
+                if venue_type == "latrobe":
+                    days_data = scrape_latrobe_venue(page, venue_info["url"], venue_info["name"], headless)
+                elif venue_type == "state_sports":
+                    days_data = scrape_state_sports_venue(page, venue_info["url"], venue_info["name"], headless)
+                else:
+                    days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
+
                 all_venue_data[venue_id] = {
                     "name": venue_info["name"],
                     "days": days_data
