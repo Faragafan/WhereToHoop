@@ -49,7 +49,7 @@ VENUES = {
         "url": "https://darebin.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/3a5501333"
     },
     "statesports": {
-        "name": "State Sport Centres",
+        "name": "MSAC",
         "url": "https://statesportcentres.com.au/sports/basketball/",
         "type": "state_sports"
     }
