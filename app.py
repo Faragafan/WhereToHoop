@@ -12,13 +12,28 @@ from pathlib import Path
 from scraper import DATA_FILE
 
 app = Flask(__name__)
+FALLBACK_DATA_FILE = Path(__file__).parent / "data" / "availability.json"
+
+
+def read_json_file(path):
+    with open(path, 'r', encoding='utf-8-sig') as f:
+        return json.load(f)
 
 
 def load_data():
     """Load availability data from JSON file."""
     if DATA_FILE.exists():
-        with open(DATA_FILE, 'r', encoding='utf-8-sig') as f:
-            return json.load(f)
+        try:
+            return read_json_file(DATA_FILE)
+        except (OSError, json.JSONDecodeError) as exc:
+            app.logger.warning("Could not load %s: %s", DATA_FILE, exc)
+
+    if FALLBACK_DATA_FILE.exists() and FALLBACK_DATA_FILE != DATA_FILE:
+        try:
+            return read_json_file(FALLBACK_DATA_FILE)
+        except (OSError, json.JSONDecodeError) as exc:
+            app.logger.warning("Could not load fallback %s: %s", FALLBACK_DATA_FILE, exc)
+
     return {"venues": {}, "last_updated": None}
 
 
