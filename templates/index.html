@@ -191,7 +191,7 @@
 
         .controls-panel {
             display: grid;
-            grid-template-columns: minmax(220px, 320px) 1fr auto;
+            grid-template-columns: minmax(220px, 320px) 1fr minmax(210px, auto) auto;
             align-items: end;
             gap: 18px;
             padding: 16px;
@@ -241,6 +241,40 @@
             color: var(--text);
             background: var(--surface);
             box-shadow: 0 2px 8px rgba(31, 36, 32, 0.08);
+        }
+
+        .location-control {
+            min-width: 0;
+        }
+
+        .location-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 42px;
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0 12px;
+            color: var(--text);
+            background: var(--surface);
+            font-size: 0.9rem;
+            font-weight: 750;
+        }
+
+        .location-btn:disabled {
+            cursor: wait;
+            color: var(--muted);
+        }
+
+        .location-status {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .legend {
@@ -542,6 +576,15 @@
                 </div>
             </div>
 
+            <div class="location-control">
+                <span class="control-label">Sort</span>
+                <button class="location-btn" id="locationButton" onclick="requestUserLocation()" type="button">
+                    <i class="bi bi-geo-alt"></i>
+                    <span id="locationButtonText">Use my location</span>
+                </button>
+                <div class="location-status" id="locationStatus">Default order</div>
+            </div>
+
             <div class="legend" aria-label="Legend">
                 <div class="legend-item">
                     <span class="legend-color" style="background: var(--available-high);"></span>
@@ -579,11 +622,30 @@
         let allData = {};
         let currentDate = null;
         let currentFilter = 'all';
+        let userLocation = null;
+        const melbourneTimeZone = 'Australia/Melbourne';
         const venueDisplayOrder = ['boroondara', 'darebin', 'diamondvalley', 'dcss'];
+        const locationPromptKey = 'whereToHoopLocationPrompted';
 
         function getSortedVenueEntries(venues) {
             const orderMap = new Map(venueDisplayOrder.map((id, index) => [id, index]));
             return Object.entries(venues).sort(([idA, venueA], [idB, venueB]) => {
+                const distanceA = getVenueDistance(venueA);
+                const distanceB = getVenueDistance(venueB);
+
+                if (userLocation) {
+                    const hasDistanceA = Number.isFinite(distanceA);
+                    const hasDistanceB = Number.isFinite(distanceB);
+
+                    if (hasDistanceA && hasDistanceB && distanceA !== distanceB) {
+                        return distanceA - distanceB;
+                    }
+
+                    if (hasDistanceA !== hasDistanceB) {
+                        return hasDistanceA ? -1 : 1;
+                    }
+                }
+
                 const orderA = orderMap.has(idA) ? orderMap.get(idA) : Number.MAX_SAFE_INTEGER;
                 const orderB = orderMap.has(idB) ? orderMap.get(idB) : Number.MAX_SAFE_INTEGER;
 
@@ -595,17 +657,93 @@
             });
         }
 
+        function calculateDistanceKm(fromLat, fromLng, toLat, toLng) {
+            const earthRadiusKm = 6371;
+            const toRadians = degrees => degrees * Math.PI / 180;
+            const deltaLat = toRadians(toLat - fromLat);
+            const deltaLng = toRadians(toLng - fromLng);
+            const lat1 = toRadians(fromLat);
+            const lat2 = toRadians(toLat);
+            const a = Math.sin(deltaLat / 2) ** 2
+                + Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) ** 2;
+            return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        }
+
+        function getVenueDistance(venue) {
+            if (!userLocation) return null;
+            const latitude = Number(venue.latitude);
+            const longitude = Number(venue.longitude);
+            if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return null;
+            return calculateDistanceKm(userLocation.latitude, userLocation.longitude, latitude, longitude);
+        }
+
+        function formatDistance(distanceKm) {
+            if (!Number.isFinite(distanceKm)) return '';
+            if (distanceKm < 1) return `${Math.round(distanceKm * 1000)} m`;
+            return `${distanceKm.toFixed(distanceKm < 10 ? 1 : 0)} km`;
+        }
+
+        function setLocationStatus(text, loading = false) {
+            const button = document.getElementById('locationButton');
+            const buttonText = document.getElementById('locationButtonText');
+            const status = document.getElementById('locationStatus');
+
+            if (!button || !buttonText || !status) return;
+
+            button.disabled = loading;
+            buttonText.textContent = loading ? 'Locating...' : (userLocation ? 'Update location' : 'Use my location');
+            status.textContent = text;
+        }
+
+        function requestUserLocation(isAutomatic = false) {
+            if (!navigator.geolocation) {
+                setLocationStatus('Location unavailable');
+                return;
+            }
+
+            if (isAutomatic) {
+                sessionStorage.setItem(locationPromptKey, 'true');
+            }
+
+            setLocationStatus('Waiting for permission...', true);
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    userLocation = {
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude
+                    };
+                    setLocationStatus('Nearest venues first');
+                    renderAll();
+                },
+                () => {
+                    userLocation = null;
+                    setLocationStatus('Default order');
+                    renderAll();
+                },
+                {
+                    enableHighAccuracy: false,
+                    timeout: 8000,
+                    maximumAge: 300000
+                }
+            );
+        }
+
+        function maybeAskForLocation() {
+            if (sessionStorage.getItem(locationPromptKey)) return;
+            requestUserLocation(true);
+        }
+
         function updateClock() {
             const now = new Date();
             const timeStr = now.toLocaleTimeString('en-AU', {
-                timeZone: 'Australia/Melbourne',
+                timeZone: melbourneTimeZone,
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit',
                 hour12: true
             });
             const dateStr = now.toLocaleDateString('en-AU', {
-                timeZone: 'Australia/Melbourne',
+                timeZone: melbourneTimeZone,
                 weekday: 'long',
                 year: 'numeric',
                 month: 'long',
@@ -627,9 +765,28 @@
             return hours * 60 + minutes;
         }
 
+        function getMelbourneParts() {
+            const parts = new Intl.DateTimeFormat('en-AU', {
+                timeZone: melbourneTimeZone,
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                hourCycle: 'h23'
+            }).formatToParts(new Date());
+
+            return Object.fromEntries(parts.map(part => [part.type, part.value]));
+        }
+
+        function getTodayDateString() {
+            const parts = getMelbourneParts();
+            return `${parts.year}-${parts.month}-${parts.day}`;
+        }
+
         function getCurrentMinutes() {
-            const now = new Date();
-            return now.getHours() * 60 + now.getMinutes();
+            const parts = getMelbourneParts();
+            return Number(parts.hour) * 60 + Number(parts.minute);
         }
 
         function getSlotInterval(slots) {
@@ -665,7 +822,7 @@
                     const lastUpdatedDate = new Date(allData.last_updated);
                     document.getElementById('lastUpdated').textContent =
                         `Updated ${lastUpdatedDate.toLocaleString('en-AU', {
-                            timeZone: 'Australia/Melbourne',
+                            timeZone: melbourneTimeZone,
                             dateStyle: 'medium',
                             timeStyle: 'short'
                         })}`;
@@ -693,7 +850,7 @@
             });
 
             const dates = Array.from(allDates).sort();
-            const today = new Date().toISOString().split('T')[0];
+            const today = getTodayDateString();
 
             dates.forEach(date => {
                 const option = document.createElement('option');
@@ -773,7 +930,7 @@
         }
 
         function updateRealTimeStats() {
-            const today = new Date().toISOString().split('T')[0];
+            const today = getTodayDateString();
             const venues = allData.venues || {};
             const venuesNow = [];
             const venuesNext2Hours = [];
@@ -785,6 +942,7 @@
                 if (currentSlot) {
                     venuesNow.push({
                         name: venue.name,
+                        distance: getVenueDistance(venue),
                         available: currentSlot.available,
                         max: currentSlot.max_slots,
                         time: currentSlot.time_slot
@@ -796,6 +954,7 @@
                     const bestSlot = getBestSlot(next2HourSlots);
                     venuesNext2Hours.push({
                         name: venue.name,
+                        distance: getVenueDistance(venue),
                         available: bestSlot.available,
                         max: bestSlot.max_slots,
                         time: bestSlot.time_slot,
@@ -823,7 +982,7 @@
 
             list.innerHTML = visibleVenues.map(venue => `
                 <div class="venue-list-item">
-                    <span>${venue.name}</span>
+                    <span>${venue.name}${Number.isFinite(venue.distance) ? ` · ${formatDistance(venue.distance)}` : ''}</span>
                     <span class="availability-badge ${getAvailabilityClass(venue.available)}">${venue.available}/${venue.max}</span>
                 </div>
             `).join('') + (hiddenCount > 0 ? `<div class="venue-list-more">+${hiddenCount} more venues</div>` : '');
@@ -834,7 +993,7 @@
             const venues = allData.venues || {};
             const venueEntries = getSortedVenueEntries(venues);
 
-            document.getElementById('venueCount').textContent = `${venueEntries.length} venues`;
+            document.getElementById('venueCount').textContent = `${venueEntries.length} venues${userLocation ? ' · nearest first' : ''}`;
 
             if (venueEntries.length === 0) {
                 grid.innerHTML = '<div class="no-data">No venue data available. Run the scraper first.</div>';
@@ -849,6 +1008,8 @@
                 const availableCount = slots.filter(slot => slot.available > 0).length;
                 const totalCount = slots.length;
                 const bestSlot = getBestSlot(slots);
+                const distance = getVenueDistance(venue);
+                const distanceText = Number.isFinite(distance) ? `${formatDistance(distance)} away - ` : '';
 
                 const card = document.createElement('article');
                 card.className = 'venue-card animate-in';
@@ -876,7 +1037,7 @@
                         <div>
                             <h3 class="venue-name">${venue.name}</h3>
                             <div class="venue-meta">
-                                ${totalCount} slots${bestSlot ? ` - best ${bestSlot.available}/${bestSlot.max_slots} at ${bestSlot.time_slot}` : ''}
+                                ${distanceText}${totalCount} slots${bestSlot ? ` - best ${bestSlot.available}/${bestSlot.max_slots} at ${bestSlot.time_slot}` : ''}
                             </div>
                         </div>
                         <div class="availability-summary">${availableCount}/${totalCount}</div>
@@ -896,7 +1057,10 @@
         }
 
         setInterval(updateRealTimeStats, 60000);
-        document.addEventListener('DOMContentLoaded', loadData);
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadData();
+            maybeAskForLocation();
+        });
     </script>
 </body>
 </html>

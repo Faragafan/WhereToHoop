@@ -17,12 +17,14 @@ Tired of showing up to the courts only to find them fully booked? **Where to Hoo
 | Aqualink | Box Hill |
 | Boroondara Sports Complex | Balwyn |
 | Carlton Baths | Carlton |
+| North Melbourne Recreation Centre | North Melbourne |
 | Narrandjeri Stadium | Thornbury |
 | Macleod Recreation & Fitness Centre| Macleod |
 | Sportslink | Vermont South |
 | Diamond Valley Sports and Fitness | Greensborough |
 | Darebin Community Sports Stadium (DCSS) | Reservoir |
 | MSAC | Albert Park |
+| Oakleigh Recreation Centre | Oakleigh |
 
 ## Features
 

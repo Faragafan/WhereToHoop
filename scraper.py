@@ -13,43 +13,87 @@ import pytz
 VENUES = {
     "boroondara": {
         "name": "Boroondara Leisure",
+        "location": "Balwyn North",
+        "latitude": -37.80320,
+        "longitude": 145.08689,
         "url": "https://boroondaraleisure.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/3a1132fc5"
     },
     "darebin": {
         "name": "Darebin",
+        "location": "Thornbury",
+        "latitude": -37.7637794,
+        "longitude": 145.0238691,
         "url": "https://darebin.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/09869a3c4"
     },
     "sportslink": {
         "name": "Sportslink",
+        "location": "Vermont South",
+        "latitude": -37.85378,
+        "longitude": 145.18286,
         "url": "https://aqualink.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/3ce734397"
     },
     "carltonbaths": {
         "name": "Carlton Baths",
+        "location": "Carlton",
+        "latitude": -37.79347,
+        "longitude": 144.97196,
         "url": "https://activemelbourne-ymca.perfectgym.com/ClientPortal2/ClubZoneOccupancyCalendar/894234c91"
+    },
+    "northmelbourne": {
+        "name": "North Melbourne Recreation Centre",
+        "location": "North Melbourne",
+        "latitude": -37.7995278,
+        "longitude": 144.9402674,
+        "url": "https://activemelbourne-ymca.perfectgym.com/ClientPortal2/ClubZoneOccupancyCalendar/0e348c794"
     },
     "macleod": {
         "name": "Macleod",
+        "location": "Macleod",
+        "latitude": -37.72469,
+        "longitude": 145.06835,
         "url": "https://mrfc.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/36b6925a1"
     },
     "aqualink": {
         "name": "Aqualink",
+        "location": "Box Hill",
+        "latitude": -37.824759,
+        "longitude": 145.117693,
         "url": "https://aqualink.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/6b1539a68?_gl=1*13d1e4w*_gcl_au*NDUyNjkxMzQ0LjE3NjgxMDM1NDQ.*_ga*OTk4NzY0NjA1LjE3NjgxMDM1NDM.*_ga_H5VPG63HEP*czE3Njg5OTEwNDAkbzIkZzAkdDE3Njg5OTEwNDAkajYwJGwwJGgyMDczMjk5NzA."
     },
     "latrobe": {
         "name": "La Trobe Sports Park",
+        "location": "Bundoora",
+        "latitude": -37.72196,
+        "longitude": 145.04310,
         "url": "https://sportonline.latrobe.edu.au/ResourceAvailability/17",
         "type": "latrobe"  # Different scraping method
     },
     "diamondvalley": {
         "name": "Diamond Valley Sports and Fitness",
+        "location": "Greensborough",
+        "latitude": -37.6895013,
+        "longitude": 145.111462,
         "url": "https://nillumbiklf.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/55cf81997"
     },
     "dcss": {
         "name": "DCSS",
+        "location": "Reservoir",
+        "latitude": -37.72143,
+        "longitude": 145.03011,
         "url": "https://darebin.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/3a5501333"
+    },
+    "oakleigh": {
+        "name": "Oakleigh Recreation Centre",
+        "location": "Oakleigh",
+        "latitude": -37.89298,
+        "longitude": 145.09732,
+        "url": "https://activemonash.perfectgym.com.au/ClientPortal2/ClubZoneOccupancyCalendar/68534c6610"
     },
     "statesports": {
         "name": "MSAC",
+        "location": "Albert Park",
+        "latitude": -37.84310,
+        "longitude": 144.96139,
         "url": "https://statesportcentres.com.au/sports/basketball/",
         "type": "state_sports"
     }
@@ -64,6 +108,20 @@ DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '3'))
 
 # Melbourne timezone
 MELBOURNE_TZ = pytz.timezone('Australia/Melbourne')
+
+
+def build_venue_data(venue_info, days_data, error=None):
+    """Build the API payload for a venue."""
+    venue_data = {
+        "name": venue_info["name"],
+        "location": venue_info.get("location"),
+        "latitude": venue_info.get("latitude"),
+        "longitude": venue_info.get("longitude"),
+        "days": days_data
+    }
+    if error:
+        venue_data["error"] = error
+    return venue_data
 
 
 def parse_availability(text):
@@ -177,6 +235,59 @@ def parse_state_sports_ranges(cell_text):
     return ranges
 
 
+def parse_state_sports_header_start_date(headers):
+    """Infer the real date for the first State Sport Centres table column."""
+    if not headers:
+        return datetime.now(MELBOURNE_TZ).date()
+
+    first_header = headers[0]
+    day_match = re.search(r'\b(\d{1,2})\b', first_header)
+    if not day_match:
+        return datetime.now(MELBOURNE_TZ).date()
+
+    day_num = int(day_match.group(1))
+    weekday_match = re.search(r'\b(mon|tue|wed|thu|fri|sat|sun)\b', first_header, re.IGNORECASE)
+    weekday_map = {
+        "mon": 0,
+        "tue": 1,
+        "wed": 2,
+        "thu": 3,
+        "fri": 4,
+        "sat": 5,
+        "sun": 6,
+    }
+    expected_weekday = weekday_map.get(weekday_match.group(1).lower()) if weekday_match else None
+
+    today = datetime.now(MELBOURNE_TZ).date()
+    candidates = []
+
+    for month_offset in range(-1, 2):
+        month = today.month + month_offset
+        year = today.year
+
+        while month < 1:
+            month += 12
+            year -= 1
+        while month > 12:
+            month -= 12
+            year += 1
+
+        try:
+            candidate = datetime(year, month, day_num).date()
+        except ValueError:
+            continue
+
+        if expected_weekday is not None and candidate.weekday() != expected_weekday:
+            continue
+
+        candidates.append(candidate)
+
+    if not candidates:
+        return today
+
+    return min(candidates, key=lambda candidate: abs((candidate - today).days))
+
+
 def scrape_state_sports_venue(page, url, venue_name, headless=False):
     """Scrape State Sport Centres basketball availability table."""
     page.goto(url, timeout=60000, wait_until="domcontentloaded")
@@ -208,7 +319,7 @@ def scrape_state_sports_venue(page, url, venue_name, headless=False):
     if not headers or not rows:
         return {}
 
-    start_date = datetime.now(MELBOURNE_TZ).date()
+    start_date = parse_state_sports_header_start_date(headers)
     days_data = {}
 
     for day_index, _header in enumerate(headers):
@@ -473,17 +584,10 @@ def scrape_venue_standalone(venue_id, venue_info, headless=True):
             else:
                 days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
             
-            return venue_id, {
-                "name": venue_info["name"],
-                "days": days_data
-            }
+            return venue_id, build_venue_data(venue_info, days_data)
         except Exception as e:
             print(f"❌ Error scraping {venue_info['name']}: {e}")
-            return venue_id, {
-                "name": venue_info["name"],
-                "days": {},
-                "error": str(e)
-            }
+            return venue_id, build_venue_data(venue_info, {}, str(e))
         finally:
             browser.close()
 
@@ -552,17 +656,10 @@ def scrape_calendar(headless=False, venues=None):
                 else:
                     days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
 
-                all_venue_data[venue_id] = {
-                    "name": venue_info["name"],
-                    "days": days_data
-                }
+                all_venue_data[venue_id] = build_venue_data(venue_info, days_data)
             except Exception as e:
                 print(f"❌ Error scraping {venue_info['name']}: {e}")
-                all_venue_data[venue_id] = {
-                    "name": venue_info["name"],
-                    "days": {},
-                    "error": str(e)
-                }
+                all_venue_data[venue_id] = build_venue_data(venue_info, {}, str(e))
 
         print("\nDone. Browser will close in 1 second...")
         time.sleep(1)

@@ -50,6 +50,9 @@ def get_venues():
         venues.append({
             "id": venue_id,
             "name": venue_data.get("name", venue_id),
+            "location": venue_data.get("location"),
+            "latitude": venue_data.get("latitude"),
+            "longitude": venue_data.get("longitude"),
             "days": list(venue_data.get("days", {}).keys())
         })
     return jsonify(venues)
