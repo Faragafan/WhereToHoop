@@ -677,7 +677,7 @@ def save_data(all_venue_data):
         "last_updated": datetime.now(MELBOURNE_TZ).isoformat()
     }
     
-    with open(DATA_FILE, 'w') as f:
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2)
     
     total_days = sum(len(v.get("days", {})) for v in all_venue_data.values())
@@ -688,7 +688,7 @@ def save_data(all_venue_data):
 def load_data():
     """Load scraped data from JSON file."""
     if DATA_FILE.exists():
-        with open(DATA_FILE, 'r') as f:
+        with open(DATA_FILE, 'r', encoding='utf-8-sig') as f:
             return json.load(f)
     return {"venues": {}, "last_updated": None}
 

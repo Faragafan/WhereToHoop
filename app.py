@@ -17,7 +17,7 @@ app = Flask(__name__)
 def load_data():
     """Load availability data from JSON file."""
     if DATA_FILE.exists():
-        with open(DATA_FILE, 'r') as f:
+        with open(DATA_FILE, 'r', encoding='utf-8-sig') as f:
             return json.load(f)
     return {"venues": {}, "last_updated": None}
 
