@@ -8,6 +8,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 import pytz
+from urllib.parse import urlencode, urlparse
 
 # Define venues to scrape
 VENUES = {
@@ -105,6 +106,7 @@ DATA_FILE = Path(DATA_DIR) / "availability.json"
 
 # Cloud-friendly concurrency (default 3 for Render free tier - balances speed and memory)
 DEFAULT_MAX_WORKERS = int(os.environ.get('MAX_WORKERS', '3'))
+PERFECTGYM_TARGET_DAYS = int(os.environ.get('PERFECTGYM_TARGET_DAYS', '10'))
 
 # Melbourne timezone
 MELBOURNE_TZ = pytz.timezone('Australia/Melbourne')
@@ -192,6 +194,48 @@ def split_into_days(slots, start_date=None):
         days[date_str] = current_day_slots
     
     return days
+
+
+def build_perfectgym_api_url(calendar_url, start_date=None):
+    """Build the PerfectGym calendar API URL from a public calendar URL."""
+    parsed = urlparse(calendar_url)
+    calendar_id = parsed.path.rstrip("/").split("/")[-1]
+    params = {"calendarId": calendar_id}
+    if start_date:
+        params["startDate"] = start_date
+
+    return (
+        f"{parsed.scheme}://{parsed.netloc}"
+        f"/ClientPortal2/api/Calendars/ClubZoneOccupancyCalendar/GetCalendar?"
+        f"{urlencode(params)}"
+    )
+
+
+def parse_perfectgym_hour(hour):
+    """Convert one PerfectGym API hour block into the dashboard slot shape."""
+    from_hour = hour.get("fromHour") or {}
+    time_slot = from_hour.get("name") or from_hour.get("value") or ""
+    time_value = from_hour.get("value") or ""
+    available = int(hour.get("totalCountOfOccupancyAvailability") or 0)
+    max_slots = int(hour.get("numberOfFacilities") or max(available, 0))
+
+    if not hour.get("isAvailable", False):
+        available = 0
+
+    return {
+        "time_slot": time_slot,
+        "time_24h": time_value[:5] if re.match(r"^\d{2}:\d{2}", time_value) else parse_time_slot(time_slot),
+        "available": available,
+        "max_slots": max_slots
+    }
+
+
+def trim_days(days_data, target_days):
+    """Keep the earliest target_days dates from a days dictionary."""
+    trimmed = {}
+    for date_str in sorted(days_data.keys())[:target_days]:
+        trimmed[date_str] = days_data[date_str]
+    return trimmed
 
 
 def minutes_to_time_slot(minutes):
@@ -367,6 +411,46 @@ def scrape_state_sports_venue(page, url, venue_name, headless=False):
 
 def scrape_venue(page, url, venue_name, headless=False):
     """Scrape a single venue and return days data."""
+    try:
+        days_data = {}
+        next_date = None
+        seen_start_dates = set()
+
+        while len(days_data) < PERFECTGYM_TARGET_DAYS:
+            api_url = build_perfectgym_api_url(url, next_date)
+            if api_url in seen_start_dates:
+                break
+            seen_start_dates.add(api_url)
+
+            response = page.request.get(api_url, timeout=60000)
+            if not response.ok:
+                raise RuntimeError(f"PerfectGym API returned {response.status}")
+
+            calendar_data = response.json()
+            day_blocks = calendar_data.get("dayBlocks") or []
+
+            for day_block in day_blocks:
+                date_str = (day_block.get("date") or "")[:10]
+                if not date_str or date_str in days_data:
+                    continue
+
+                slots = [
+                    parse_perfectgym_hour(hour)
+                    for hour in day_block.get("hours", [])
+                ]
+                slots.sort(key=lambda slot: parse_time_to_minutes(slot["time_24h"]))
+                days_data[date_str] = slots
+
+            paging = calendar_data.get("paging") or {}
+            next_date = paging.get("nextDate")
+            if not next_date:
+                break
+
+        if days_data:
+            return trim_days(days_data, PERFECTGYM_TARGET_DAYS)
+    except Exception as e:
+        print(f"  [DEBUG] PerfectGym API scrape failed for {venue_name}, falling back to DOM: {e}")
+
     page.goto(url, timeout=60000)
     
     # Wait for calendar blocks to appear
