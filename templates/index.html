@@ -298,6 +298,86 @@
             border-radius: 999px;
         }
 
+        .finder-panel {
+            display: grid;
+            grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.6fr);
+            gap: 16px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        .finder-form {
+            display: grid;
+            grid-template-columns: minmax(150px, 1fr) minmax(130px, 0.7fr) auto;
+            align-items: end;
+            gap: 10px;
+        }
+
+        .finder-input {
+            min-height: 42px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            background-color: var(--surface);
+            font-size: 0.95rem;
+        }
+
+        .finder-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 42px;
+            border: 0;
+            border-radius: 8px;
+            padding: 0 14px;
+            color: #fff;
+            background: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .finder-results {
+            min-height: 42px;
+        }
+
+        .finder-summary {
+            margin-bottom: 8px;
+            color: var(--muted);
+            font-size: 0.86rem;
+            font-weight: 700;
+        }
+
+        .finder-result-list {
+            display: grid;
+            gap: 6px;
+        }
+
+        .finder-result-item {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 6px;
+            background: var(--surface-muted);
+        }
+
+        .finder-result-name {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 800;
+        }
+
+        .finder-result-meta {
+            margin-top: 2px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
         .section-heading {
             display: flex;
             justify-content: space-between;
@@ -471,6 +551,10 @@
                 align-items: stretch;
             }
 
+            .finder-panel {
+                grid-template-columns: 1fr;
+            }
+
             .legend {
                 justify-content: flex-start;
             }
@@ -499,6 +583,10 @@
 
             .filter-group {
                 display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .finder-form {
                 grid-template-columns: 1fr;
             }
 
@@ -605,6 +693,23 @@
             </div>
         </section>
 
+        <section class="panel finder-panel" aria-label="Find available courts by date and time">
+            <div>
+                <span class="control-label">Find courts</span>
+                <div class="finder-form">
+                    <input class="form-control finder-input" id="finderDate" type="date" aria-label="Search date">
+                    <input class="form-control finder-input" id="finderTime" type="time" step="900" aria-label="Search time">
+                    <button class="finder-button" onclick="searchAvailabilityByTime()" type="button">
+                        <i class="bi bi-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+            <div class="finder-results" id="finderResults">
+                <div class="muted-empty">Select a date and time to see available courts</div>
+            </div>
+        </section>
+
         <div class="section-heading">
             <h2>Venues</h2>
             <small id="venueCount">Loading venues...</small>
@@ -623,6 +728,7 @@
         let currentDate = null;
         let currentFilter = 'all';
         let userLocation = null;
+        let finderInitialized = false;
         const melbourneTimeZone = 'Australia/Melbourne';
         const venueDisplayOrder = ['boroondara', 'darebin', 'diamondvalley', 'dcss'];
         const locationPromptKey = 'whereToHoopLocationPrompted';
@@ -714,11 +820,13 @@
                     };
                     setLocationStatus('Nearest venues first');
                     renderAll();
+                    refreshFinderResultsIfReady();
                 },
                 () => {
                     userLocation = null;
                     setLocationStatus('Default order');
                     renderAll();
+                    refreshFinderResultsIfReady();
                 },
                 {
                     enableHighAccuracy: false,
@@ -789,11 +897,45 @@
             return Number(parts.hour) * 60 + Number(parts.minute);
         }
 
+        function formatMinutesForTimeInput(minutes) {
+            const safeMinutes = Math.max(0, Math.min(1439, minutes));
+            const hours = Math.floor(safeMinutes / 60);
+            const mins = safeMinutes % 60;
+            return `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}`;
+        }
+
+        function getDefaultFinderTime() {
+            const roundedMinutes = Math.ceil(getCurrentMinutes() / 30) * 30;
+            return formatMinutesForTimeInput(roundedMinutes >= 1440 ? 1430 : roundedMinutes);
+        }
+
         function getSlotInterval(slots) {
             if (slots.length < 2) return 60;
             const time1 = timeToMinutes(slots[0].time_24h);
             const time2 = timeToMinutes(slots[1].time_24h);
             return Math.max(time2 - time1, 15);
+        }
+
+        function getSlotAtTime(slots, targetMinutes) {
+            const orderedSlots = [...slots].sort((slotA, slotB) =>
+                timeToMinutes(slotA.time_24h) - timeToMinutes(slotB.time_24h)
+            );
+
+            for (let index = 0; index < orderedSlots.length; index += 1) {
+                const slot = orderedSlots[index];
+                const slotStart = timeToMinutes(slot.time_24h);
+                const nextSlot = orderedSlots[index + 1];
+                const nextStart = nextSlot ? timeToMinutes(nextSlot.time_24h) : null;
+                const slotEnd = nextStart && nextStart > slotStart
+                    ? nextStart
+                    : slotStart + getSlotInterval(orderedSlots);
+
+                if (targetMinutes >= slotStart && targetMinutes < slotEnd) {
+                    return slot;
+                }
+            }
+
+            return null;
         }
 
         function isCurrentSlot(time24h, slots) {
@@ -870,6 +1012,39 @@
             if (currentDate) {
                 dateSelector.value = currentDate;
             }
+
+            syncFinderControls(dates);
+        }
+
+        function syncFinderControls(dates) {
+            const finderDate = document.getElementById('finderDate');
+            const finderTime = document.getElementById('finderTime');
+
+            if (!finderDate || !finderTime || dates.length === 0) return;
+
+            finderDate.min = dates[0];
+            finderDate.max = dates[dates.length - 1];
+
+            if (!finderInitialized || !dates.includes(finderDate.value)) {
+                finderDate.value = currentDate || dates[0];
+            }
+
+            if (!finderInitialized || !finderTime.value) {
+                finderTime.value = getDefaultFinderTime();
+            }
+
+            finderInitialized = true;
+        }
+
+        function refreshFinderResultsIfReady() {
+            const results = document.getElementById('finderResults');
+            const dateInput = document.getElementById('finderDate');
+            const timeInput = document.getElementById('finderTime');
+
+            if (!results || !dateInput?.value || !timeInput?.value) return;
+            if (!results.querySelector('.finder-summary')) return;
+
+            searchAvailabilityByTime();
         }
 
         function formatDate(dateStr) {
@@ -878,6 +1053,16 @@
                 weekday: 'short',
                 month: 'short',
                 day: 'numeric'
+            });
+        }
+
+        function formatTime(timeStr) {
+            const [hours, minutes] = timeStr.split(':').map(Number);
+            const date = new Date(2000, 0, 1, hours, minutes);
+            return date.toLocaleTimeString('en-AU', {
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
             });
         }
 
@@ -986,6 +1171,78 @@
                     <span class="availability-badge ${getAvailabilityClass(venue.available)}">${venue.available}/${venue.max}</span>
                 </div>
             `).join('') + (hiddenCount > 0 ? `<div class="venue-list-more">+${hiddenCount} more venues</div>` : '');
+        }
+
+        function searchAvailabilityByTime() {
+            const dateInput = document.getElementById('finderDate');
+            const timeInput = document.getElementById('finderTime');
+            const results = document.getElementById('finderResults');
+            const queryDate = dateInput.value;
+            const queryTime = timeInput.value;
+
+            if (!queryDate || !queryTime) {
+                results.innerHTML = '<div class="muted-empty">Choose both a date and time</div>';
+                return;
+            }
+
+            const venues = allData.venues || {};
+            const queryMinutes = timeToMinutes(queryTime);
+            const matches = [];
+            let venuesWithDate = 0;
+
+            getSortedVenueEntries(venues).forEach(([_venueId, venue]) => {
+                const slots = venue.days?.[queryDate] || [];
+                if (slots.length > 0) {
+                    venuesWithDate += 1;
+                }
+
+                const matchingSlot = getSlotAtTime(slots, queryMinutes);
+                if (matchingSlot && matchingSlot.available > 0) {
+                    matches.push({
+                        name: venue.name,
+                        location: venue.location,
+                        distance: getVenueDistance(venue),
+                        slot: matchingSlot
+                    });
+                }
+            });
+
+            const formattedDate = formatDate(queryDate);
+            const formattedTime = formatTime(queryTime);
+
+            if (venuesWithDate === 0) {
+                results.innerHTML = `<div class="muted-empty">No cached data for ${formattedDate}</div>`;
+                return;
+            }
+
+            if (matches.length === 0) {
+                results.innerHTML = `
+                    <div class="finder-summary">0 venues available on ${formattedDate} at ${formattedTime}</div>
+                    <div class="muted-empty">No courts available at that time</div>
+                `;
+                return;
+            }
+
+            results.innerHTML = `
+                <div class="finder-summary">${matches.length} venues available on ${formattedDate} at ${formattedTime}</div>
+                <div class="finder-result-list">
+                    ${matches.map(match => {
+                        const distanceText = Number.isFinite(match.distance) ? ` - ${formatDistance(match.distance)} away` : '';
+                        const locationText = match.location ? `${match.location}${distanceText}` : distanceText.replace(' - ', '');
+                        return `
+                            <div class="finder-result-item">
+                                <div>
+                                    <div class="finder-result-name">${match.name}</div>
+                                    <div class="finder-result-meta">${match.slot.time_slot}${locationText ? ` - ${locationText}` : ''}</div>
+                                </div>
+                                <span class="availability-badge ${getAvailabilityClass(match.slot.available)}">
+                                    ${match.slot.available}/${match.slot.max_slots}
+                                </span>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
         }
 
         function renderVenuesGrid() {
