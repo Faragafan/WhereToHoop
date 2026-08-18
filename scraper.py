@@ -97,6 +97,14 @@ VENUES = {
         "longitude": 144.96139,
         "url": "https://statesportcentres.com.au/sports/basketball/",
         "type": "state_sports"
+    },
+    "stonnington": {
+        "name": "Stonnington Sports Centre",
+        "location": "Chadstone",
+        "latitude": -37.8828579,
+        "longitude": 145.0805456,
+        "url": "https://www.stonnington.vic.gov.au/active/Sport-and-facilities/Stadiums/Court-availability",
+        "type": "stonnington"
     }
 }
 
@@ -330,6 +338,129 @@ def parse_state_sports_header_start_date(headers):
         return today
 
     return min(candidates, key=lambda candidate: abs((candidate - today).days))
+
+
+def parse_stonnington_availability(cell_text):
+    """Parse Stonnington availability values such as '3 courts' or 'No courts'."""
+    if not cell_text:
+        return 0
+
+    text = cell_text.strip().lower()
+    match = re.search(r'(\d+)\s+court', text)
+    if match:
+        return int(match.group(1))
+
+    return 0
+
+
+def parse_stonnington_updated_date(page_text):
+    """Infer the Monday date for the Stonnington weekly availability table."""
+    today = datetime.now(MELBOURNE_TZ).date()
+    match = re.search(
+        r'Last updated:\s*([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)',
+        page_text,
+        re.IGNORECASE
+    )
+    if not match:
+        return today - timedelta(days=today.weekday())
+
+    weekday_text, day_text, month_text = match.groups()
+    weekday_map = {
+        "monday": 0,
+        "tuesday": 1,
+        "wednesday": 2,
+        "thursday": 3,
+        "friday": 4,
+        "saturday": 5,
+        "sunday": 6,
+    }
+    month_map = {
+        "january": 1,
+        "february": 2,
+        "march": 3,
+        "april": 4,
+        "may": 5,
+        "june": 6,
+        "july": 7,
+        "august": 8,
+        "september": 9,
+        "october": 10,
+        "november": 11,
+        "december": 12,
+    }
+
+    day = int(day_text)
+    month = month_map.get(month_text.lower())
+    expected_weekday = weekday_map.get(weekday_text.lower())
+    if not month:
+        return today - timedelta(days=today.weekday())
+
+    candidates = []
+    for year in range(today.year - 1, today.year + 2):
+        try:
+            candidate = datetime(year, month, day).date()
+        except ValueError:
+            continue
+
+        if expected_weekday is not None and candidate.weekday() != expected_weekday:
+            continue
+
+        candidates.append(candidate)
+
+    if not candidates:
+        return today - timedelta(days=today.weekday())
+
+    updated_date = min(candidates, key=lambda candidate: abs((candidate - today).days))
+    return updated_date - timedelta(days=updated_date.weekday())
+
+
+def scrape_stonnington_venue(page, url, venue_name, headless=False):
+    """Scrape Stonnington's static weekly court availability table."""
+    page.goto(url, timeout=60000, wait_until="domcontentloaded")
+    page.wait_for_selector("table", timeout=60000)
+
+    page_text = page.inner_text("body")
+    week_start = parse_stonnington_updated_date(page_text)
+    table_data = page.evaluate("""
+        () => {
+            const table = document.querySelector('table');
+            if (!table) return [];
+
+            return [...table.querySelectorAll('tr')].map(row =>
+                [...row.querySelectorAll('th, td')].map(cell => cell.innerText.trim())
+            );
+        }
+    """)
+
+    if not table_data:
+        return {}
+
+    rows = [row for row in table_data[1:] if len(row) >= 2]
+    days_data = {
+        (week_start + timedelta(days=day_index)).strftime("%Y-%m-%d"): []
+        for day_index in range(7)
+    }
+
+    for row in rows:
+        time_slot = row[0].strip()
+        if not time_slot:
+            continue
+
+        time_24h = parse_time_slot(time_slot)
+        for day_index, cell_text in enumerate(row[1:8]):
+            date_str = (week_start + timedelta(days=day_index)).strftime("%Y-%m-%d")
+            available = parse_stonnington_availability(cell_text)
+            days_data[date_str].append({
+                "time_slot": time_slot,
+                "time_24h": time_24h,
+                "available": available,
+                "max_slots": 4
+            })
+
+    for date_str in days_data:
+        days_data[date_str].sort(key=lambda slot: parse_time_to_minutes(slot["time_24h"]))
+
+    return days_data
 
 
 def scrape_state_sports_venue(page, url, venue_name, headless=False):
@@ -665,6 +796,8 @@ def scrape_venue_standalone(venue_id, venue_info, headless=True):
                 days_data = scrape_latrobe_venue(page, venue_info["url"], venue_info["name"], headless)
             elif venue_type == "state_sports":
                 days_data = scrape_state_sports_venue(page, venue_info["url"], venue_info["name"], headless)
+            elif venue_type == "stonnington":
+                days_data = scrape_stonnington_venue(page, venue_info["url"], venue_info["name"], headless)
             else:
                 days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
             
@@ -737,6 +870,8 @@ def scrape_calendar(headless=False, venues=None):
                     days_data = scrape_latrobe_venue(page, venue_info["url"], venue_info["name"], headless)
                 elif venue_type == "state_sports":
                     days_data = scrape_state_sports_venue(page, venue_info["url"], venue_info["name"], headless)
+                elif venue_type == "stonnington":
+                    days_data = scrape_stonnington_venue(page, venue_info["url"], venue_info["name"], headless)
                 else:
                     days_data = scrape_venue(page, venue_info["url"], venue_info["name"], headless)
 

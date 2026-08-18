@@ -25,6 +25,7 @@ Tired of showing up to the courts only to find them fully booked? **Where to Hoo
 | Darebin Community Sports Stadium (DCSS) | Reservoir |
 | MSAC | Albert Park |
 | Oakleigh Recreation Centre | Oakleigh |
+| Stonnington Sports Centre | Chadstone |
 
 ## Features
 
