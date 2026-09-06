@@ -9054,24 +9054,6 @@
             "time_24h": "17:00",
             "available": 0,
             "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 6
           }
         ],
         "2026-09-08": [
@@ -9144,24 +9126,6 @@
           {
             "time_slot": "5:00 PM",
             "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
             "available": 0,
             "max_slots": 6
           }
@@ -9238,24 +9202,6 @@
             "time_24h": "17:00",
             "available": 0,
             "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 6
           }
         ],
         "2026-09-10": [
@@ -9328,24 +9274,6 @@
           {
             "time_slot": "5:00 PM",
             "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
             "available": 0,
             "max_slots": 6
           }
@@ -9422,24 +9350,6 @@
             "time_24h": "17:00",
             "available": 0,
             "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 1,
-            "max_slots": 6
           }
         ],
         "2026-09-12": [
@@ -9512,24 +9422,6 @@
           {
             "time_slot": "5:00 PM",
             "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
             "available": 0,
             "max_slots": 6
           }
@@ -9605,24 +9497,6 @@
             "time_slot": "5:00 PM",
             "time_24h": "17:00",
             "available": 1,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 6
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
             "max_slots": 6
           }
         ],
@@ -19177,5 +19051,5 @@
       }
     }
   },
-  "last_updated": "2026-09-07T01:56:17.069861+10:00"
+  "last_updated": "2026-09-07T02:31:18.387285+10:00"
 }
