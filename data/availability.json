@@ -1,1609 +1,5 @@
 {
   "venues": {
-    "boroondara": {
-      "name": "Boroondara Leisure",
-      "location": "Balwyn North",
-      "latitude": -37.8032,
-      "longitude": 145.08689,
-      "days": {
-        "2026-10-14": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 3,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-15": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-16": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-17": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 4,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-18": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-19": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 4,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-20": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 3,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-21": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 3,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-22": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 1,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-23": [
-          {
-            "time_slot": "5:30 AM",
-            "time_24h": "05:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 PM",
-            "time_24h": "20:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 PM",
-            "time_24h": "21:30",
-            "available": 0,
-            "max_slots": 5
-          }
-        ]
-      }
-    },
-    "darebin": {
-      "name": "Darebin",
-      "location": "Thornbury",
-      "latitude": -37.7637794,
-      "longitude": 145.0238691,
-      "days": {
-        "2026-10-14": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 3,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-15": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-16": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-17": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-18": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-19": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-20": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-21": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "available": 0,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-22": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "available": 0,
-            "max_slots": 4
-          }
-        ],
-        "2026-10-23": [
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 3,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 1,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 4
-          },
-          {
-            "time_slot": "9:00 PM",
-            "time_24h": "21:00",
-            "available": 0,
-            "max_slots": 4
-          }
-        ]
-      }
-    },
     "sportslink": {
       "name": "Sportslink",
       "location": "Vermont South",
@@ -3432,570 +1828,558 @@
         ]
       }
     },
-    "northmelbourne": {
-      "name": "North Melbourne Recreation Centre",
-      "location": "North Melbourne",
-      "latitude": -37.7995278,
-      "longitude": 144.9402674,
+    "darebin": {
+      "name": "Darebin",
+      "location": "Thornbury",
+      "latitude": -37.7637794,
+      "longitude": 145.0238691,
       "days": {
         "2026-10-14": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           }
         ],
         "2026-10-15": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           }
         ],
         "2026-10-16": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           }
         ],
         "2026-10-17": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           }
         ],
         "2026-10-18": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           }
         ],
         "2026-10-19": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           }
         ],
         "2026-10-20": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           }
         ],
         "2026-10-21": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
+            "available": 3,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "available": 0,
+            "max_slots": 4
           }
         ],
         "2026-10-22": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 1,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
             "available": 1,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 0,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "available": 0,
+            "max_slots": 4
           }
         ],
         "2026-10-23": [
           {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 1
-          },
-          {
             "time_slot": "9:00 AM",
             "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 3,
+            "max_slots": 4
           },
           {
             "time_slot": "10:00 AM",
             "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "11:00 AM",
             "time_24h": "11:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
           },
           {
             "time_slot": "12:00 PM",
             "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 1
+            "available": 1,
+            "max_slots": 4
           },
           {
             "time_slot": "1:00 PM",
             "time_24h": "13:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 2,
+            "max_slots": 4
           },
           {
             "time_slot": "2:00 PM",
             "time_24h": "14:00",
-            "available": 1,
-            "max_slots": 1
+            "available": 4,
+            "max_slots": 4
           },
           {
             "time_slot": "3:00 PM",
             "time_24h": "15:00",
+            "available": 4,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
             "available": 0,
-            "max_slots": 1
+            "max_slots": 4
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "9:00 PM",
+            "time_24h": "21:00",
+            "available": 0,
+            "max_slots": 4
           }
         ]
       }
@@ -7868,6 +6252,574 @@
         ]
       }
     },
+    "northmelbourne": {
+      "name": "North Melbourne Recreation Centre",
+      "location": "North Melbourne",
+      "latitude": -37.7995278,
+      "longitude": 144.9402674,
+      "days": {
+        "2026-10-14": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-15": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 1,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-16": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-17": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-18": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-19": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 1,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-20": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 1,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-21": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-22": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 1,
+            "max_slots": 1
+          }
+        ],
+        "2026-10-23": [
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 1,
+            "max_slots": 1
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 1
+          }
+        ]
+      }
+    },
     "macleod": {
       "name": "Macleod",
       "location": "Macleod",
@@ -9708,6 +8660,1054 @@
             "time_24h": "21:00",
             "available": 0,
             "max_slots": 6
+          }
+        ]
+      }
+    },
+    "boroondara": {
+      "name": "Boroondara Leisure",
+      "location": "Balwyn North",
+      "latitude": -37.8032,
+      "longitude": 145.08689,
+      "days": {
+        "2026-10-14": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 3,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-15": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-16": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-17": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 4,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-18": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-19": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 4,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-20": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 3,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-21": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 3,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-22": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 1,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-23": [
+          {
+            "time_slot": "5:30 AM",
+            "time_24h": "05:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 PM",
+            "time_24h": "20:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 PM",
+            "time_24h": "21:30",
+            "available": 0,
+            "max_slots": 5
           }
         ]
       }
@@ -12919,1774 +12919,6 @@
         ],
         "2026-10-20": [],
         "2026-10-21": []
-      }
-    },
-    "oakleigh": {
-      "name": "Oakleigh Recreation Centre",
-      "location": "Oakleigh",
-      "latitude": -37.89298,
-      "longitude": 145.09732,
-      "days": {
-        "2026-10-14": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-15": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-16": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 2,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-17": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-18": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-19": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-20": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-21": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-22": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 5,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 2,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 0,
-            "max_slots": 5
-          }
-        ],
-        "2026-10-23": [
-          {
-            "time_slot": "6:00 AM",
-            "time_24h": "06:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 AM",
-            "time_24h": "06:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 AM",
-            "time_24h": "07:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 AM",
-            "time_24h": "07:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 AM",
-            "time_24h": "08:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:30 AM",
-            "time_24h": "08:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:00 AM",
-            "time_24h": "09:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "9:30 AM",
-            "time_24h": "09:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:00 AM",
-            "time_24h": "10:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "10:30 AM",
-            "time_24h": "10:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:00 AM",
-            "time_24h": "11:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "11:30 AM",
-            "time_24h": "11:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:00 PM",
-            "time_24h": "12:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "12:30 PM",
-            "time_24h": "12:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:00 PM",
-            "time_24h": "13:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "1:30 PM",
-            "time_24h": "13:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:00 PM",
-            "time_24h": "14:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "2:30 PM",
-            "time_24h": "14:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:00 PM",
-            "time_24h": "15:00",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "3:30 PM",
-            "time_24h": "15:30",
-            "available": 4,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:00 PM",
-            "time_24h": "16:00",
-            "available": 3,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "4:30 PM",
-            "time_24h": "16:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:00 PM",
-            "time_24h": "17:00",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "5:30 PM",
-            "time_24h": "17:30",
-            "available": 0,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:00 PM",
-            "time_24h": "18:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "6:30 PM",
-            "time_24h": "18:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:00 PM",
-            "time_24h": "19:00",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "7:30 PM",
-            "time_24h": "19:30",
-            "available": 1,
-            "max_slots": 5
-          },
-          {
-            "time_slot": "8:00 PM",
-            "time_24h": "20:00",
-            "available": 1,
-            "max_slots": 5
-          }
-        ]
       }
     },
     "stonnington": {
@@ -18512,7 +16744,1247 @@
           }
         ]
       }
+    },
+    "oakleigh": {
+      "name": "Oakleigh Recreation Centre",
+      "location": "Oakleigh",
+      "latitude": -37.89298,
+      "longitude": 145.09732,
+      "days": {
+        "2026-10-14": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-15": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-16": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 2,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-17": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-18": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-19": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ],
+        "2026-10-20": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 AM",
+            "time_24h": "08:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:30 AM",
+            "time_24h": "08:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:00 AM",
+            "time_24h": "09:00",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "9:30 AM",
+            "time_24h": "09:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:00 AM",
+            "time_24h": "10:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "10:30 AM",
+            "time_24h": "10:30",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:00 AM",
+            "time_24h": "11:00",
+            "available": 4,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "11:30 AM",
+            "time_24h": "11:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:00 PM",
+            "time_24h": "12:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "12:30 PM",
+            "time_24h": "12:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:00 PM",
+            "time_24h": "13:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "1:30 PM",
+            "time_24h": "13:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:00 PM",
+            "time_24h": "14:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "2:30 PM",
+            "time_24h": "14:30",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 2,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 5,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 3,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 1,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "5:30 PM",
+            "time_24h": "17:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:00 PM",
+            "time_24h": "18:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "6:30 PM",
+            "time_24h": "18:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:00 PM",
+            "time_24h": "19:00",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "7:30 PM",
+            "time_24h": "19:30",
+            "available": 0,
+            "max_slots": 5
+          },
+          {
+            "time_slot": "8:00 PM",
+            "time_24h": "20:00",
+            "available": 0,
+            "max_slots": 5
+          }
+        ]
+      }
     }
   },
-  "last_updated": "2026-10-14T06:41:39.298520+11:00"
+  "last_updated": "2026-10-14T06:59:49.272424+11:00"
 }
