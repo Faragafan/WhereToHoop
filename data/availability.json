@@ -15166,7 +15166,62 @@
       "latitude": -37.8431,
       "longitude": 144.96139,
       "days": {
-        "2026-11-16": [],
+        "2026-11-16": [
+          {
+            "time_slot": "6:00 AM",
+            "time_24h": "06:00",
+            "available": 1,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "6:30 AM",
+            "time_24h": "06:30",
+            "available": 1,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "7:00 AM",
+            "time_24h": "07:00",
+            "available": 1,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "7:30 AM",
+            "time_24h": "07:30",
+            "available": 1,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "3:00 PM",
+            "time_24h": "15:00",
+            "available": 4,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "3:30 PM",
+            "time_24h": "15:30",
+            "available": 2,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:00 PM",
+            "time_24h": "16:00",
+            "available": 2,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "4:30 PM",
+            "time_24h": "16:30",
+            "available": 1,
+            "max_slots": 4
+          },
+          {
+            "time_slot": "5:00 PM",
+            "time_24h": "17:00",
+            "available": 1,
+            "max_slots": 4
+          }
+        ],
         "2026-11-17": [],
         "2026-11-18": [
           {
@@ -18967,5 +19022,5 @@
       }
     }
   },
-  "last_updated": "2026-11-16T06:12:56.657391+11:00"
+  "last_updated": "2026-11-16T06:29:53.993115+11:00"
 }
